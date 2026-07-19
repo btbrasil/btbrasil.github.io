@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backing Track Brasil | Catálogo de Playbacks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        /* Ajuste para o sistema estático */
+        .loading-spinner { text-align: center; padding: 50px; font-size: 20px; color: #1a73e8; }
+        #btb-toast { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 11000; box-shadow: 0 5px 20px rgba(0,0,0,0.4); display: none; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">Home</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="text-center">
+        <h1>Backing Track Brasil</h1>
+        <p class="lead">Playbacks Profissionais para Guitarra e Violão</p>
+    </div>
+
+    <!-- BUSCA -->
+    <div class="well" style="background: #f8f9fa; padding: 40px 20px; border: 1px solid #ddd; margin-top: 20px;">
+        <div class="row text-center">
+            <h3 style="margin-top:0;">O que você quer tocar hoje?</h3><br>
+            <div class="col-md-8 col-md-offset-2">
+                <input type="text" id="myInput" class="form-control input-lg" placeholder="Digite artista ou música..." autocomplete="off">
+                <p class="text-muted" style="margin-top:10px;">Busque entre mais de 2.600 músicas disponíveis.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ÁREA DE RESULTADOS -->
+    <div id="tabela-container" style="display:none;">
+        <div class="responsive-table">
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>Demo / Música</th>
+                        <th>Artista</th>
+                        <th>Selecionar</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <!-- Javascript preencherá aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- MENSAGEM INICIAL -->
+    <div id="home-msg" class="text-center" style="padding: 40px;">
+        <span class="glyphicon glyphicon-search" style="font-size: 50px; color: #ddd;"></span>
+        <h3>Digite o nome de uma banda ou música para começar.</h3>
+    </div>
+</div>
+
+<!-- BOTÕES FLUTUANTES -->
+<div id="floatingCounterContainer" class="floating-counter" style="display:none;">
+    <span id="selectedCount">0</span>
+    <a href="javascript:void(0)" id="limparCarrinho" style="color: #ff9999; margin-left: 10px; font-size: 11px;">Limpar</a>
+</div>
+<button type="button" class="btn btn-primary btn-lg" id="finalizarBtn" style="display:none; position: fixed; bottom: 30px; right: 30px; z-index: 999; border-radius: 50px;">Finalizar Pedido via WhatsApp</button>
+
+<!-- MODAL REVISÃO -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Revisar Pedido</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="listaRevisao" class="list-group"></ul>
+                <h4>Total: <span id="totalText">R$ 0,00</span></h4>
+                <p class="alert alert-warning">Ao clicar no botão abaixo, seu WhatsApp abrirá com a lista de músicas pronta para nos enviar.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-lg btn-block" id="btnEnviarWhats">
+                    <span class="glyphicon glyphicon-phone"></span> Enviar via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
