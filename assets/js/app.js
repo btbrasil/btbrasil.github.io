@@ -1,46 +1,32 @@
 $(document).ready(function () {
     let allTracks = [];
+    let filteredData = [];
     let selectedItems = JSON.parse(localStorage.getItem('btb_carrinho')) || [];
     let currentAudio = new Audio();
-    let avisoExibido = false;
+    
+    let itemsPerBatch = 100; // Quantidade de músicas por vez
+    let currentIndex = 0;
 
-    // 1. Carrega os dados do JSON
+    // 1. Carregar Dados
     $.getJSON('tracks.json', function(data) {
         allTracks = data;
-        updateUI(); // Atualiza se já houver algo no carrinho
-        console.log("Catálogo carregado: " + allTracks.length + " músicas.");
+        filteredData = allTracks;
+        renderNextBatch();
+        updateUI();
     });
 
-    // 2. Busca em Tempo Real (Filtragem rápida)
-    $('#myInput').on('keyup', function() {
-        const query = $(this).val().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        
-        if (query.length < 2) {
-            $('#tabela-container').hide();
-            $('#home-msg').show();
-            return;
-        }
-
-        const filtered = allTracks.filter(t => 
-            t.musica.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(query) || 
-            t.artista.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(query)
-        ).slice(0, 50); // Mostra apenas os 50 primeiros para ser rápido
-
-        renderTable(filtered);
-    });
-
-    function renderTable(data) {
+    // 2. Renderização por Demanda (Lazy Load)
+    function renderNextBatch() {
+        const nextBatch = filteredData.slice(currentIndex, currentIndex + itemsPerBatch);
         let html = '';
-        data.forEach(t => {
+        
+        nextBatch.forEach(t => {
             const isChecked = selectedItems.find(i => i.link === t.link) ? 'checked' : '';
             const rowClass = isChecked ? 'selected' : '';
             
             html += `
             <tr class="${rowClass}">
-                <td>
-                    <button class="player-btn" data-link="${t.link}">▶</button>
-                    ${t.musica}
-                </td>
+                <td><button class="player-btn" data-link="${t.link}">▶</button> ${t.musica}</td>
                 <td>${t.artista}</td>
                 <td class="checkbox-cell">
                     <input type="checkbox" class="track-checkbox" 
@@ -49,37 +35,63 @@ $(document).ready(function () {
                 </td>
             </tr>`;
         });
-        $('#myTable').html(html);
-        $('#home-msg').hide();
-        $('#tabela-container').show();
+
+        $('#myTable').append(html);
+        currentIndex += itemsPerBatch;
+        $('#loading-msg').hide();
     }
 
-    // 3. Player e Seleção (Lógica simplificada)
+    // 3. Scroll Infinito
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+            if (currentIndex < filteredData.length) {
+                $('#loading-msg').show();
+                renderNextBatch();
+            }
+        }
+    });
+
+    // 4. Busca
+    $('#myInput').on('keyup', function() {
+        const query = $(this).val().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        
+        filteredData = allTracks.filter(t => 
+            t.musica.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(query) || 
+            t.artista.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(query)
+        );
+
+        $('#myTable').empty();
+        currentIndex = 0;
+        renderNextBatch();
+    });
+
+    // 5. Player de Áudio
     $(document).on('click', '.player-btn', function() {
-        const url = $(this).data('link');
+        const btn = $(this);
+        const url = btn.data('link');
+
         if (currentAudio.src.includes(url) && !currentAudio.paused) {
             currentAudio.pause();
-            $(this).text('▶');
+            btn.text('▶');
         } else {
             $('.player-btn').text('▶');
             currentAudio.src = url;
             currentAudio.play();
-            $(this).text('⏸');
+            btn.text('⏸');
         }
     });
 
+    // 6. Seleção
     $(document).on('change', '.track-checkbox', function() {
         const info = $(this).data('info');
         const link = $(this).data('link');
 
         if ($(this).is(':checked')) {
             selectedItems.push({info: info, link: link});
-            if (!avisoExibido) {
-                alert("Música adicionada! Suas escolhas ficam salvas enquanto você navega.");
-                avisoExibido = true;
-            }
+            $(this).closest('tr').addClass('selected');
         } else {
             selectedItems = selectedItems.filter(i => i.link !== link);
+            $(this).closest('tr').removeClass('selected');
         }
         
         localStorage.setItem('btb_carrinho', JSON.stringify(selectedItems));
@@ -98,30 +110,33 @@ $(document).ready(function () {
         $('#listaRevisao').html(htmlLista);
 
         if (count > 0) {
-            $('#floatingCounterContainer, #finalizarBtn').show();
+            $('#floatingCounterContainer, #finalizarBtn').fadeIn();
         } else {
-            $('#floatingCounterContainer, #finalizarBtn').hide();
+            $('#floatingCounterContainer, #finalizarBtn').fadeOut();
+            $('#myModal').modal('hide');
         }
     }
 
-    // 4. Finalizar via WhatsApp
+    // 7. WhatsApp (COLOQUE SEU NÚMERO ABAIXO)
     $('#finalizarBtn').click(() => $('#myModal').modal('show'));
 
     $('#btnEnviarWhats').click(function() {
         let msg = "Olá! Gostaria de encomendar estas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
-        msg += "\nTotal: " + $('#totalText').text();
+        msg += "\nTotal estimado: " + $('#totalText').text();
         
-        const url = "https://api.whatsapp.com/send?phone=55XXXXXXXXXXX&text=" + encodeURIComponent(msg);
+        const numero = "5511999999999"; // <--- SEU NÚMERO AQUI (DDI + DDD + NUMERO)
+        const url = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg);
         window.open(url, '_blank');
     });
 
     $('#limparCarrinho').click(function() {
-        if(confirm("Limpar tudo?")) {
+        if(confirm("Limpar todas as seleções?")) {
             selectedItems = [];
             localStorage.removeItem('btb_carrinho');
-            updateUI();
             $('.track-checkbox').prop('checked', false);
+            $('.selected').removeClass('selected');
+            updateUI();
         }
     });
 });
