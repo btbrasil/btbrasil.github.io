@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backing Track Brasil | Catálogo de Playbacks</title>
+    <title>Catálogo de Backing Tracks | Backing Track Brasil</title>
+    <meta name="description" content="Confira nosso catálogo completo com mais de 2.600 backing tracks profissionais para guitarra e violão.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
     <style>
-        /* Ajuste para o sistema estático */
-        .loading-spinner { text-align: center; padding: 50px; font-size: 20px; color: #1a73e8; }
-        #btb-toast { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 12px 25px; border-radius: 50px; z-index: 11000; box-shadow: 0 5px 20px rgba(0,0,0,0.4); display: none; }
+        .floating-counter { display: none; position: fixed; bottom: 80px; right: 20px; padding: 10px 20px; background-color: #333; color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; }
+        .selected { background-color: #e0f7fa !important; }
+        .checkbox-cell { text-align: center; width: 50px; }
+        .player-btn { background: #1a73e8; border: none; width: 30px; height: 30px; border-radius: 50%; color: white; margin-right: 10px; }
+        #loading-msg { padding: 20px; font-weight: bold; color: #666; }
     </style>
 </head>
 <body>
@@ -17,32 +20,26 @@
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
-            <a href="/" class="navbar-brand">Home</a>
+            <a href="/" class="navbar-brand">Backing Track Brasil</a>
         </div>
     </div>
 </nav>
 
 <div class="container">
     <div class="text-center">
-        <h1>Backing Track Brasil</h1>
-        <p class="lead">Playbacks Profissionais para Guitarra e Violão</p>
+        <h1>Nosso Catálogo Completo</h1>
+        <p class="lead">Mais de 2.600 músicas nacionais e internacionais</p>
     </div>
 
     <!-- BUSCA -->
-    <div class="well" style="background: #f8f9fa; padding: 40px 20px; border: 1px solid #ddd; margin-top: 20px;">
-        <div class="row text-center">
-            <h3 style="margin-top:0;">O que você quer tocar hoje?</h3><br>
-            <div class="col-md-8 col-md-offset-2">
-                <input type="text" id="myInput" class="form-control input-lg" placeholder="Digite artista ou música..." autocomplete="off">
-                <p class="text-muted" style="margin-top:10px;">Busque entre mais de 2.600 músicas disponíveis.</p>
-            </div>
-        </div>
+    <div class="well" style="background: #f8f9fa; border: 1px solid #ddd; margin-top: 20px;">
+        <input type="text" id="myInput" class="form-control input-lg" placeholder="Procurar música ou artista na lista..." autocomplete="off">
     </div>
 
-    <!-- ÁREA DE RESULTADOS -->
-    <div id="tabela-container" style="display:none;">
-        <div class="responsive-table">
-            <table class="table table-bordered table-condensed">
+    <!-- TABELA -->
+    <div id="tabela-container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th>Demo / Música</th>
@@ -51,27 +48,25 @@
                     </tr>
                 </thead>
                 <tbody id="myTable">
-                    <!-- Javascript preencherá aqui -->
+                    <!-- O catálogo será carregado aqui via Javascript -->
                 </tbody>
             </table>
         </div>
-    </div>
-
-    <!-- MENSAGEM INICIAL -->
-    <div id="home-msg" class="text-center" style="padding: 40px;">
-        <span class="glyphicon glyphicon-search" style="font-size: 50px; color: #ddd;"></span>
-        <h3>Digite o nome de uma banda ou música para começar.</h3>
+        <div id="loading-msg" class="text-center" style="display:none;">Carregando mais músicas...</div>
     </div>
 </div>
 
 <!-- BOTÕES FLUTUANTES -->
-<div id="floatingCounterContainer" class="floating-counter" style="display:none;">
-    <span id="selectedCount">0</span>
+<div id="floatingCounterContainer" class="floating-counter">
+    <span id="selectedCount">0</span> selecionada(s)
     <a href="javascript:void(0)" id="limparCarrinho" style="color: #ff9999; margin-left: 10px; font-size: 11px;">Limpar</a>
 </div>
-<button type="button" class="btn btn-primary btn-lg" id="finalizarBtn" style="display:none; position: fixed; bottom: 30px; right: 30px; z-index: 999; border-radius: 50px;">Finalizar Pedido via WhatsApp</button>
 
-<!-- MODAL REVISÃO -->
+<button type="button" class="btn btn-primary btn-lg" id="finalizarBtn" style="display:none; position: fixed; bottom: 20px; right: 20px; z-index: 999; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    Finalizar via WhatsApp
+</button>
+
+<!-- MODAL DE REVISÃO -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -80,13 +75,14 @@
                 <h4 class="modal-title">Revisar Pedido</h4>
             </div>
             <div class="modal-body">
-                <ul id="listaRevisao" class="list-group"></ul>
-                <h4>Total: <span id="totalText">R$ 0,00</span></h4>
-                <p class="alert alert-warning">Ao clicar no botão abaixo, seu WhatsApp abrirá com a lista de músicas pronta para nos enviar.</p>
+                <ul id="listaRevisao" class="list-group" style="max-height: 300px; overflow-y: auto;"></ul>
+                <h4 class="text-right">Total estimado: <span id="totalText">R$ 0,00</span></h4>
+                <hr>
+                <p class="alert alert-info">Ao clicar abaixo, enviaremos sua lista para o nosso WhatsApp para combinarmos o pagamento e entrega.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success btn-lg btn-block" id="btnEnviarWhats">
-                    <span class="glyphicon glyphicon-phone"></span> Enviar via WhatsApp
+                    Enviar para o WhatsApp
                 </button>
             </div>
         </div>
