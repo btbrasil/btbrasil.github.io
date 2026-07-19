@@ -9,9 +9,16 @@ $(document).ready(function () {
 
     // 1. Carregar Dados e Organizar
     $.getJSON('tracks.json', function(data) {
-        // Garantimos a ordenação também no JS por segurança
+        // Ordena por Título da Música e depois por Artista
         allTracks = data.sort((a, b) => {
-            return a.artista.localeCompare(b.artista, 'pt-BR', { sensitivity: 'base' });
+            // Compara o nome da música
+            let comp = a.musica.localeCompare(b.musica, 'pt-BR', { sensitivity: 'base' });
+            
+            // Se as músicas tiverem o mesmo nome, organiza pelo nome do artista
+            if (comp === 0) {
+                return a.artista.localeCompare(b.artista, 'pt-BR', { sensitivity: 'base' });
+            }
+            return comp;
         });
         
         filteredData = allTracks;
