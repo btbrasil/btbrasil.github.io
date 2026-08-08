@@ -23,14 +23,14 @@
     {
         "musica": "(If You're Wondering If I Want You To) I Want You To",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_I_Want_You_To.mp3",
+        "link": "\/demos\/Weezer_-_I_Want_You_To.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
     {
         "musica": "(Reprise) Sandblasted Skin",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Reprise_Sandblasted_Skin.mp3",
+        "link": "\/demos\/Pantera_-_Reprise_Sandblasted_Skin.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -58,21 +58,21 @@
     {
         "musica": "10's",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_10s.mp3",
+        "link": "\/demos\/Pantera_-_10s.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "13 Steps to Nowhere",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_13_Steps_to_Nowhere.mp3",
+        "link": "\/demos\/Pantera_-_13_Steps_to_Nowhere.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "18 til I Die",
         "artista": "Bryan Adams",
-        "link": "\/demos2\/Bryan_Adams_-_18_til_I_Die.mp3",
+        "link": "\/demos\/Bryan_Adams_-_18_til_I_Die.mp3",
         "categoria": "internacional",
         "slug_artista": "bryan-adams"
     },
@@ -121,7 +121,7 @@
     {
         "musica": "5 Minutes Alone",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_5_Minutes_Alone.mp3",
+        "link": "\/demos\/Pantera_-_5_Minutes_Alone.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -296,7 +296,7 @@
     {
         "musica": "A New Level",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_A_New_Level.mp3",
+        "link": "\/demos\/Pantera_-_A_New_Level.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -373,7 +373,7 @@
     {
         "musica": "A Thing Called Love",
         "artista": "Johnny Cash",
-        "link": "\/demos2\/Johnny_Cash_-_A_Thing_Called_Love.mp3",
+        "link": "\/demos\/Johnny_Cash_-_A_Thing_Called_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "johnny-cash"
     },
@@ -485,7 +485,7 @@
     {
         "musica": "Advertising Space",
         "artista": "Robbie Williams",
-        "link": "\/demos2\/Robbie_Williams_-_Advertising_Space.mp3",
+        "link": "\/demos\/Robbie_Williams_-_Advertising_Space.mp3",
         "categoria": "internacional",
         "slug_artista": "robbie-williams"
     },
@@ -520,7 +520,7 @@
     {
         "musica": "Afterlife",
         "artista": "Avenged Sevenfold",
-        "link": "\/demos2\/Avenged_Sevenfold_-_Afterlife.mp3",
+        "link": "\/demos\/Avenged_Sevenfold_-_Afterlife.mp3",
         "categoria": "internacional",
         "slug_artista": "avenged-sevenfold"
     },
@@ -534,7 +534,7 @@
     {
         "musica": "Age of Consent",
         "artista": "New Order",
-        "link": "\/demos2\/New_Order_-_Age_of_Consent.mp3",
+        "link": "\/demos\/New_Order_-_Age_of_Consent.mp3",
         "categoria": "internacional",
         "slug_artista": "new-order"
     },
@@ -548,21 +548,21 @@
     {
         "musica": "Ain't It Fun",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Aint_It_Fun.mp3",
+        "link": "\/demos\/Paramore_-_Aint_It_Fun.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
     {
         "musica": "Ain't No Sunshine",
         "artista": "Bill Withers",
-        "link": "\/demos2\/Bill_Withers_-_Aint_No_Sunshine.mp3",
+        "link": "\/demos\/Bill_Withers_-_Aint_No_Sunshine.mp3",
         "categoria": "internacional",
         "slug_artista": "bill-withers"
     },
     {
         "musica": "Ain't Too Proud to Beg",
         "artista": "The Temptations",
-        "link": "\/demos2\/The_Temptations_-_Aint_Too_Proud_to_Beg.mp3",
+        "link": "\/demos\/The_Temptations_-_Aint_Too_Proud_to_Beg.mp3",
         "categoria": "internacional",
         "slug_artista": "the-temptations"
     },
@@ -681,7 +681,7 @@
     {
         "musica": "All I Wanted",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_All_I_Wanted.mp3",
+        "link": "\/demos\/Paramore_-_All_I_Wanted.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -723,7 +723,7 @@
     {
         "musica": "All Right Now",
         "artista": "Free",
-        "link": "\/demos2\/Free_-_All_Right_Now.mp3",
+        "link": "\/demos\/Free_-_All_Right_Now.mp3",
         "categoria": "internacional",
         "slug_artista": "free"
     },
@@ -807,7 +807,7 @@
     {
         "musica": "Always with Me, Always with You",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Always_with_Me_Always_with_You.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Always_with_Me_Always_with_You.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -919,7 +919,7 @@
     {
         "musica": "And You and I",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_And_You_and_I.mp3",
+        "link": "\/demos\/Yes_-_And_You_and_I.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -961,7 +961,7 @@
     {
         "musica": "Angels",
         "artista": "Robbie Williams",
-        "link": "\/demos2\/Robbie_Williams_-_Angels.mp3",
+        "link": "\/demos\/Robbie_Williams_-_Angels.mp3",
         "categoria": "internacional",
         "slug_artista": "robbie-williams"
     },
@@ -1052,14 +1052,14 @@
     {
         "musica": "Any Man of Mine",
         "artista": "Shania Twain",
-        "link": "\/demos2\/Shania_Twain_-_Any_Man_of_Mine.mp3",
+        "link": "\/demos\/Shania_Twain_-_Any_Man_of_Mine.mp3",
         "categoria": "internacional",
         "slug_artista": "shania-twain"
     },
     {
         "musica": "Any Way You Want It",
         "artista": "Journey",
-        "link": "\/demos2\/Journey_-_Any_Way_You_Want_It.mp3",
+        "link": "\/demos\/Journey_-_Any_Way_You_Want_It.mp3",
         "categoria": "internacional",
         "slug_artista": "journey"
     },
@@ -1402,14 +1402,14 @@
     {
         "musica": "Back to Black",
         "artista": "Amy Winehouse",
-        "link": "\/demos2\/Amy_Winehouse_-_Back_to_Black.mp3",
+        "link": "\/demos\/Amy_Winehouse_-_Back_to_Black.mp3",
         "categoria": "internacional",
         "slug_artista": "amy-winehouse"
     },
     {
         "musica": "Back to the Shack",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Back_to_the_Shack.mp3",
+        "link": "\/demos\/Weezer_-_Back_to_the_Shack.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -1458,7 +1458,7 @@
     {
         "musica": "Bailando",
         "artista": "Enrique Iglesias",
-        "link": "\/demos2\/Enrique_Iglesias_-_Bailando.mp3",
+        "link": "\/demos\/Enrique_Iglesias_-_Bailando.mp3",
         "categoria": "internacional",
         "slug_artista": "enrique-iglesias"
     },
@@ -1542,7 +1542,7 @@
     {
         "musica": "Beautiful Things",
         "artista": "Benson Boone",
-        "link": "\/demos2\/Benson_Boone_-_Beautiful_Things.mp3",
+        "link": "\/demos\/Benson_Boone_-_Beautiful_Things.mp3",
         "categoria": "internacional",
         "slug_artista": "benson-boone"
     },
@@ -1570,7 +1570,7 @@
     {
         "musica": "Before I Forget",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Before_I_Forget.mp3",
+        "link": "\/demos\/Slipknot_-_Before_I_Forget.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -1584,7 +1584,7 @@
     {
         "musica": "Beggin'",
         "artista": "Maneskin",
-        "link": "\/demos2\/Maneskin_-_Beggin.mp3",
+        "link": "\/demos\/Maneskin_-_Beggin.mp3",
         "categoria": "internacional",
         "slug_artista": "maneskin"
     },
@@ -1661,7 +1661,7 @@
     {
         "musica": "Beverly Hills",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Beverly_Hills.mp3",
+        "link": "\/demos\/Weezer_-_Beverly_Hills.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -1724,7 +1724,7 @@
     {
         "musica": "Bizarre Love Triangle",
         "artista": "New Order",
-        "link": "\/demos2\/New_Order_-_Bizarre_Love_Triangle.mp3",
+        "link": "\/demos\/New_Order_-_Bizarre_Love_Triangle.mp3",
         "categoria": "internacional",
         "slug_artista": "new-order"
     },
@@ -1766,7 +1766,7 @@
     {
         "musica": "Black Magic",
         "artista": "Slayer",
-        "link": "\/demos2\/Slayer_-_Black_Magic.mp3",
+        "link": "\/demos\/Slayer_-_Black_Magic.mp3",
         "categoria": "internacional",
         "slug_artista": "slayer"
     },
@@ -1794,21 +1794,21 @@
     {
         "musica": "Blitzkrieg Bop",
         "artista": "The Ramones",
-        "link": "\/demos2\/The_Ramones_-_Blitzkrieg_Bop.mp3",
+        "link": "\/demos\/The_Ramones_-_Blitzkrieg_Bop.mp3",
         "categoria": "internacional",
         "slug_artista": "the-ramones"
     },
     {
         "musica": "Bloodstone",
         "artista": "Judas Priest",
-        "link": "\/demos2\/Judas_Priest_-_Bloodstone.mp3",
+        "link": "\/demos\/Judas_Priest_-_Bloodstone.mp3",
         "categoria": "internacional",
         "slug_artista": "judas-priest"
     },
     {
         "musica": "Blue Monday",
         "artista": "New Order",
-        "link": "\/demos2\/New_Order_-_Blue_Monday.mp3",
+        "link": "\/demos\/New_Order_-_Blue_Monday.mp3",
         "categoria": "internacional",
         "slug_artista": "new-order"
     },
@@ -1976,7 +1976,7 @@
     {
         "musica": "Breakaway",
         "artista": "Kelly Clarkson",
-        "link": "\/demos2\/Kelly_Clarkson_-_Breakaway.mp3",
+        "link": "\/demos\/Kelly_Clarkson_-_Breakaway.mp3",
         "categoria": "internacional",
         "slug_artista": "kelly-clarkson"
     },
@@ -2004,7 +2004,7 @@
     {
         "musica": "Brick by Boring Brick",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Brick_by_Boring_Brick.mp3",
+        "link": "\/demos\/Paramore_-_Brick_by_Boring_Brick.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -2067,14 +2067,14 @@
     {
         "musica": "Buddy Holly",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Buddy_Holly.mp3",
+        "link": "\/demos\/Weezer_-_Buddy_Holly.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
     {
         "musica": "Buffalo Soldier",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Buffalo_Soldier.mp3",
+        "link": "\/demos\/Bob_Marley_-_Buffalo_Soldier.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -2088,7 +2088,7 @@
     {
         "musica": "By Demons Be Driven",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_By_Demons_Be_Driven.mp3",
+        "link": "\/demos\/Pantera_-_By_Demons_Be_Driven.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -2186,7 +2186,7 @@
     {
         "musica": "Call Me Little Sunshine",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Call_Me_Little_Sunshine.mp3",
+        "link": "\/demos\/Ghost_-_Call_Me_Little_Sunshine.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -2242,7 +2242,7 @@
     {
         "musica": "Can't Get Enough of Your Love Babe",
         "artista": "Barry White",
-        "link": "\/demos2\/Barry_White_-_Cant_Get_Enough_of_Your_Love_Babe.mp3",
+        "link": "\/demos\/Barry_White_-_Cant_Get_Enough_of_Your_Love_Babe.mp3",
         "categoria": "internacional",
         "slug_artista": "barry-white"
     },
@@ -2326,7 +2326,7 @@
     {
         "musica": "Caribbean Queen (No More Love on the Run)",
         "artista": "Billy Ocean",
-        "link": "\/demos2\/Billy_Ocean_-_Caribbean_Queen.mp3",
+        "link": "\/demos\/Billy_Ocean_-_Caribbean_Queen.mp3",
         "categoria": "internacional",
         "slug_artista": "billy-ocean"
     },
@@ -2452,7 +2452,7 @@
     {
         "musica": "Cemetery Gates",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Cemetery_Gates.mp3",
+        "link": "\/demos\/Pantera_-_Cemetery_Gates.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -2487,7 +2487,7 @@
     {
         "musica": "Changes",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_Changes.mp3",
+        "link": "\/demos\/Yes_-_Changes.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -2599,14 +2599,14 @@
     {
         "musica": "Circles",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Circles.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Circles.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
     {
         "musica": "Cirice",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Cirice.mp3",
+        "link": "\/demos\/Ghost_-_Cirice.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -2669,7 +2669,7 @@
     {
         "musica": "Close to the Edge",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_Close_to_the_Edge.mp3",
+        "link": "\/demos\/Yes_-_Close_to_the_Edge.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -2732,14 +2732,14 @@
     {
         "musica": "Come Away with Me",
         "artista": "Norah Jones",
-        "link": "\/demos2\/Norah_Jones_-_Come_Away_with_Me.mp3",
+        "link": "\/demos\/Norah_Jones_-_Come_Away_with_Me.mp3",
         "categoria": "internacional",
         "slug_artista": "norah-jones"
     },
     {
         "musica": "Come On Eileen",
         "artista": "Dexys Midnight Runners",
-        "link": "\/demos2\/Dexys_Midnight_Runners_-_Come_On_Eileen.mp3",
+        "link": "\/demos\/Dexys_Midnight_Runners_-_Come_On_Eileen.mp3",
         "categoria": "internacional",
         "slug_artista": "dexys-midnight-runners"
     },
@@ -2893,7 +2893,7 @@
     {
         "musica": "Could You Be Loved",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Could_You_Be_Loved.mp3",
+        "link": "\/demos\/Bob_Marley_-_Could_You_Be_Loved.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -2914,7 +2914,7 @@
     {
         "musica": "Cowboys from Hell",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Cowboys_from_Hell.mp3",
+        "link": "\/demos\/Pantera_-_Cowboys_from_Hell.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -3012,7 +3012,7 @@
     {
         "musica": "Crushcrushcrush",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Crushcrushcrush.mp3",
+        "link": "\/demos\/Paramore_-_Crushcrushcrush.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -3026,7 +3026,7 @@
     {
         "musica": "Cryin'",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Cryin.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Cryin.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -3068,7 +3068,7 @@
     {
         "musica": "Da Ya Think I'm Sexy",
         "artista": "Rod Stewart",
-        "link": "\/demos2\/Rod_Stewart_-_Da_Ya_Think_Im_Sexy.mp3",
+        "link": "\/demos\/Rod_Stewart_-_Da_Ya_Think_Im_Sexy.mp3",
         "categoria": "internacional",
         "slug_artista": "rod-stewart"
     },
@@ -3082,7 +3082,7 @@
     {
         "musica": "Dance Macabre",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Dance_Macabre.mp3",
+        "link": "\/demos\/Ghost_-_Dance_Macabre.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -3243,7 +3243,7 @@
     {
         "musica": "Decode",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Decode.mp3",
+        "link": "\/demos\/Paramore_-_Decode.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -3264,7 +3264,7 @@
     {
         "musica": "Della Brown",
         "artista": "Queensrÿche",
-        "link": "\/demos2\/Queensryche_-_Della_Brown.mp3",
+        "link": "\/demos\/Queensryche_-_Della_Brown.mp3",
         "categoria": "internacional",
         "slug_artista": "queensryche"
     },
@@ -3334,7 +3334,7 @@
     {
         "musica": "Detroit Rock City",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Detroit_Rock_City.mp3",
+        "link": "\/demos\/Kiss_-_Detroit_Rock_City.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -3558,7 +3558,7 @@
     {
         "musica": "Domination",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Domination.mp3",
+        "link": "\/demos\/Pantera_-_Domination.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -3635,7 +3635,7 @@
     {
         "musica": "Don't Let Me Be Misunderstood",
         "artista": "Santa Esmeralda",
-        "link": "\/demos2\/Santa_Esmeralda_-_Dont_Let_Me_Be_Misunderstood.mp3",
+        "link": "\/demos\/Santa_Esmeralda_-_Dont_Let_Me_Be_Misunderstood.mp3",
         "categoria": "internacional",
         "slug_artista": "santa-esmeralda"
     },
@@ -3656,7 +3656,7 @@
     {
         "musica": "Don't Speak",
         "artista": "No Doubt",
-        "link": "\/demos2\/No_Doubt_-_Dont_Speak.mp3",
+        "link": "\/demos\/No_Doubt_-_Dont_Speak.mp3",
         "categoria": "internacional",
         "slug_artista": "no-doubt"
     },
@@ -3684,7 +3684,7 @@
     {
         "musica": "Don't Wanna Lose You",
         "artista": "Gloria Estefan",
-        "link": "\/demos2\/Gloria_Estefan_-_Dont_Wanna_Lose_You.mp3",
+        "link": "\/demos\/Gloria_Estefan_-_Dont_Wanna_Lose_You.mp3",
         "categoria": "internacional",
         "slug_artista": "gloria-estefan"
     },
@@ -3719,7 +3719,7 @@
     {
         "musica": "Dope Nose",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Dope_Nose.mp3",
+        "link": "\/demos\/Weezer_-_Dope_Nose.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -3761,7 +3761,7 @@
     {
         "musica": "Drag the Waters",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Drag_the_Waters.mp3",
+        "link": "\/demos\/Pantera_-_Drag_the_Waters.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -3817,7 +3817,7 @@
     {
         "musica": "Duality",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Duality.mp3",
+        "link": "\/demos\/Slipknot_-_Duality.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -3880,7 +3880,7 @@
     {
         "musica": "Edge of Seventeen",
         "artista": "Stevie Nicks",
-        "link": "\/demos2\/Stevie_Nicks_-_Edge_of_Seventeen.mp3",
+        "link": "\/demos\/Stevie_Nicks_-_Edge_of_Seventeen.mp3",
         "categoria": "internacional",
         "slug_artista": "stevie-nicks"
     },
@@ -3922,7 +3922,7 @@
     {
         "musica": "El Scorcho",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_El_Scorcho.mp3",
+        "link": "\/demos\/Weezer_-_El_Scorcho.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -3950,7 +3950,7 @@
     {
         "musica": "Emotions",
         "artista": "Mariah Carey",
-        "link": "\/demos2\/Mariah_Carey_-_Emotions.mp3",
+        "link": "\/demos\/Mariah_Carey_-_Emotions.mp3",
         "categoria": "internacional",
         "slug_artista": "mariah-carey"
     },
@@ -4020,7 +4020,7 @@
     {
         "musica": "Epic",
         "artista": "Faith No More",
-        "link": "\/demos2\/Faith_No_More_-_Epic.mp3",
+        "link": "\/demos\/Faith_No_More_-_Epic.mp3",
         "categoria": "internacional",
         "slug_artista": "faith-no-more"
     },
@@ -4391,7 +4391,7 @@
     {
         "musica": "Fade to Black",
         "artista": "Metallica",
-        "link": "\/demos2\/Metallica_-_Fade_to_Black.mp3",
+        "link": "\/demos\/Metallica_-_Fade_to_Black.mp3",
         "categoria": "internacional",
         "slug_artista": "metallica"
     },
@@ -4482,7 +4482,7 @@
     {
         "musica": "Feel",
         "artista": "Robbie Williams",
-        "link": "\/demos2\/Robbie_Williams_-_Feel.mp3",
+        "link": "\/demos\/Robbie_Williams_-_Feel.mp3",
         "categoria": "internacional",
         "slug_artista": "robbie-williams"
     },
@@ -4580,7 +4580,7 @@
     {
         "musica": "Floods",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Floods.mp3",
+        "link": "\/demos\/Pantera_-_Floods.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -4615,7 +4615,7 @@
     {
         "musica": "Fly Me to the Moon",
         "artista": "Frank Sinatra",
-        "link": "\/demos2\/Frank_Sinatra_-_Fly_Me_to_the_Moon.mp3",
+        "link": "\/demos\/Frank_Sinatra_-_Fly_Me_to_the_Moon.mp3",
         "categoria": "internacional",
         "slug_artista": "frank-sinatra"
     },
@@ -4629,7 +4629,7 @@
     {
         "musica": "Flying in a Blue Dream",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Flying_in_a_Blue_Dream.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Flying_in_a_Blue_Dream.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -4678,7 +4678,7 @@
     {
         "musica": "Folsom Prison Blues (Versão de 1988)",
         "artista": "Johnny Cash",
-        "link": "\/demos2\/Johnny_Cash_-_Folsom_Prison_Blues.mp3",
+        "link": "\/demos\/Johnny_Cash_-_Folsom_Prison_Blues.mp3",
         "categoria": "internacional",
         "slug_artista": "johnny-cash"
     },
@@ -4783,28 +4783,28 @@
     {
         "musica": "From Out of Nowhere",
         "artista": "Faith No More",
-        "link": "\/demos2\/Faith_No_More_-_From_Out_of_Nowhere.mp3",
+        "link": "\/demos\/Faith_No_More_-_From_Out_of_Nowhere.mp3",
         "categoria": "internacional",
         "slug_artista": "faith-no-more"
     },
     {
         "musica": "From This Moment On",
         "artista": "Shania Twain",
-        "link": "\/demos2\/Shania_Twain_-_From_This_Moment_On.mp3",
+        "link": "\/demos\/Shania_Twain_-_From_This_Moment_On.mp3",
         "categoria": "internacional",
         "slug_artista": "shania-twain"
     },
     {
         "musica": "Fucking Hostile",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Fucking_Hostile.mp3",
+        "link": "\/demos\/Pantera_-_Fucking_Hostile.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "Fuel",
         "artista": "Metallica",
-        "link": "\/demos2\/Metallica_-_Fuel.mp3",
+        "link": "\/demos\/Metallica_-_Fuel.mp3",
         "categoria": "internacional",
         "slug_artista": "metallica"
     },
@@ -4944,7 +4944,7 @@
     {
         "musica": "Get Lucky",
         "artista": "Daft Punk ft. Pharrell Williams and Nile Rodgers",
-        "link": "\/demos2\/Daft_Punk_-_Get_Lucky.mp3",
+        "link": "\/demos\/Daft_Punk_-_Get_Lucky.mp3",
         "categoria": "internacional",
         "slug_artista": "daft-punk"
     },
@@ -5070,14 +5070,14 @@
     {
         "musica": "God Damn",
         "artista": "Avenged Sevenfold",
-        "link": "\/demos2\/Avenged_Sevenfold_-_God_Damn.mp3",
+        "link": "\/demos\/Avenged_Sevenfold_-_God_Damn.mp3",
         "categoria": "internacional",
         "slug_artista": "avenged-sevenfold"
     },
     {
         "musica": "God of Thunder",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_God_of_Thunder.mp3",
+        "link": "\/demos\/Kiss_-_God_of_Thunder.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -5168,7 +5168,7 @@
     {
         "musica": "Grease",
         "artista": "Frankie Valli",
-        "link": "\/demos2\/Frankie_Valli_-_Grease.mp3",
+        "link": "\/demos\/Frankie_Valli_-_Grease.mp3",
         "categoria": "internacional",
         "slug_artista": "frankie-valli"
     },
@@ -5210,7 +5210,7 @@
     {
         "musica": "Halo",
         "artista": "Beyonce",
-        "link": "\/demos2\/Beyonce_-_Halo.mp3",
+        "link": "\/demos\/Beyonce_-_Halo.mp3",
         "categoria": "internacional",
         "slug_artista": "beyonce"
     },
@@ -5224,7 +5224,7 @@
     {
         "musica": "Hand on Heart",
         "artista": "Queensrÿche",
-        "link": "\/demos2\/Queensryche_-_Hand_on_Heart.mp3",
+        "link": "\/demos\/Queensryche_-_Hand_on_Heart.mp3",
         "categoria": "internacional",
         "slug_artista": "queensryche"
     },
@@ -5252,14 +5252,14 @@
     {
         "musica": "Happy",
         "artista": "Pharrell Williams",
-        "link": "\/demos2\/Pharrell_Williams_-_Happy.mp3",
+        "link": "\/demos\/Pharrell_Williams_-_Happy.mp3",
         "categoria": "internacional",
         "slug_artista": "pharrell-williams"
     },
     {
         "musica": "Hard Times",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Hard_Times.mp3",
+        "link": "\/demos\/Paramore_-_Hard_Times.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -5280,7 +5280,7 @@
     {
         "musica": "Hash Pipe",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Hash_Pipe.mp3",
+        "link": "\/demos\/Weezer_-_Hash_Pipe.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -5343,7 +5343,7 @@
     {
         "musica": "Heart of the Sunrise",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_Heart_of_the_Sunrise.mp3",
+        "link": "\/demos\/Yes_-_Heart_of_the_Sunrise.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -5392,7 +5392,7 @@
     {
         "musica": "Heaven's On Fire",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Heavens_On_Fire.mp3",
+        "link": "\/demos\/Kiss_-_Heavens_On_Fire.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -5525,14 +5525,14 @@
     {
         "musica": "Highway Tune",
         "artista": "Greta Van Fleet",
-        "link": "\/demos2\/Greta_Van_Fleet_-_Highway_Tune.mp3",
+        "link": "\/demos\/Greta_Van_Fleet_-_Highway_Tune.mp3",
         "categoria": "internacional",
         "slug_artista": "greta-van-fleet"
     },
     {
         "musica": "Hit the Road Jack",
         "artista": "Ray Charles",
-        "link": "\/demos2\/Ray_Charles_-_Hit_the_Road_Jack.mp3",
+        "link": "\/demos\/Ray_Charles_-_Hit_the_Road_Jack.mp3",
         "categoria": "internacional",
         "slug_artista": "ray-charles"
     },
@@ -5581,7 +5581,7 @@
     {
         "musica": "Hollow",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Hollow.mp3",
+        "link": "\/demos\/Pantera_-_Hollow.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -5637,7 +5637,7 @@
     {
         "musica": "Hong Kong Garden",
         "artista": "Siouxsie and the Banshees",
-        "link": "\/demos2\/Siouxsie_and_the_Banshees_-_Hong_Kong_Garden.mp3",
+        "link": "\/demos\/Siouxsie_and_the_Banshees_-_Hong_Kong_Garden.mp3",
         "categoria": "internacional",
         "slug_artista": "siouxsie-and-the-banshees"
     },
@@ -5728,7 +5728,7 @@
     {
         "musica": "I Can See Clearly Now",
         "artista": "Johnny Nash",
-        "link": "\/demos2\/Johnny_Nash_-_I_Can_See_Clearly_Now.mp3",
+        "link": "\/demos\/Johnny_Nash_-_I_Can_See_Clearly_Now.mp3",
         "categoria": "internacional",
         "slug_artista": "johnny-nash"
     },
@@ -5847,7 +5847,7 @@
     {
         "musica": "I Ran (So Far Away)",
         "artista": "A Flock of Seagulls",
-        "link": "\/demos2\/A_Flock_of_Seagulls_-_I_Ran.mp3",
+        "link": "\/demos\/A_Flock_of_Seagulls_-_I_Ran.mp3",
         "categoria": "internacional",
         "slug_artista": "a-flock-of-seagulls"
     },
@@ -5952,21 +5952,21 @@
     {
         "musica": "I Was Born to Love You",
         "artista": "Freddie Mercury",
-        "link": "\/demos2\/Freddie_Mercury_-_I_Was_Born_to_Love_You.mp3",
+        "link": "\/demos\/Freddie_Mercury_-_I_Was_Born_to_Love_You.mp3",
         "categoria": "internacional",
         "slug_artista": "freddie-mercury"
     },
     {
         "musica": "I Was Made for Lovin' You",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_I_Was_Made_for_Lovin_You.mp3",
+        "link": "\/demos\/Kiss_-_I_Was_Made_for_Lovin_You.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
     {
         "musica": "I Will Survive",
         "artista": "Gloria Gaynor",
-        "link": "\/demos2\/Gloria_Gaynor_-_I_Will_Survive.mp3",
+        "link": "\/demos\/Gloria_Gaynor_-_I_Will_Survive.mp3",
         "categoria": "internacional",
         "slug_artista": "gloria-gaynor"
     },
@@ -5994,7 +5994,7 @@
     {
         "musica": "I'm Broken",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Im_Broken.mp3",
+        "link": "\/demos\/Pantera_-_Im_Broken.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -6015,14 +6015,14 @@
     {
         "musica": "I'm Not the Only One",
         "artista": "Sam Smith",
-        "link": "\/demos2\/Sam_Smith_-_Im_Not_the_Only_One.mp3",
+        "link": "\/demos\/Sam_Smith_-_Im_Not_the_Only_One.mp3",
         "categoria": "internacional",
         "slug_artista": "sam-smith"
     },
     {
         "musica": "I'm Outta Love",
         "artista": "Anastacia",
-        "link": "\/demos2\/Anastacia_-_Im_Outta_Love.mp3",
+        "link": "\/demos\/Anastacia_-_Im_Outta_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "anastacia"
     },
@@ -6057,7 +6057,7 @@
     {
         "musica": "If I Ain't Got You",
         "artista": "Alicia Keys",
-        "link": "\/demos2\/Alicia_Keys_-_If_I_Aint_Got_You.mp3",
+        "link": "\/demos\/Alicia_Keys_-_If_I_Aint_Got_You.mp3",
         "categoria": "internacional",
         "slug_artista": "alicia-keys"
     },
@@ -6071,7 +6071,7 @@
     {
         "musica": "If I Could Fly",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_If_I_Could_Fly.mp3",
+        "link": "\/demos\/Joe_Satriani_-_If_I_Could_Fly.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -6106,7 +6106,7 @@
     {
         "musica": "Ignorance",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Ignorance.mp3",
+        "link": "\/demos\/Paramore_-_Ignorance.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -6358,7 +6358,7 @@
     {
         "musica": "Is This Love",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Is_This_Love.mp3",
+        "link": "\/demos\/Bob_Marley_-_Is_This_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -6372,7 +6372,7 @@
     {
         "musica": "Island in the Sun",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Island_in_the_Sun.mp3",
+        "link": "\/demos\/Weezer_-_Island_in_the_Sun.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -6477,7 +6477,7 @@
     {
         "musica": "Jamming",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Jamming.mp3",
+        "link": "\/demos\/Bob_Marley_-_Jamming.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -6568,7 +6568,7 @@
     {
         "musica": "Jungle Boogie",
         "artista": "Kool and the Gang",
-        "link": "\/demos2\/Kool_and_the_Gang_-_Jungle_Boogie.mp3",
+        "link": "\/demos\/Kool_and_the_Gang_-_Jungle_Boogie.mp3",
         "categoria": "internacional",
         "slug_artista": "kool-and-the-gang"
     },
@@ -6582,14 +6582,14 @@
     {
         "musica": "Just My Imagination (Running Away with Me)",
         "artista": "The Temptations",
-        "link": "\/demos2\/The_Temptations_-_Just_My_Imagination.mp3",
+        "link": "\/demos\/The_Temptations_-_Just_My_Imagination.mp3",
         "categoria": "internacional",
         "slug_artista": "the-temptations"
     },
     {
         "musica": "Just the Way You Are",
         "artista": "Barry White",
-        "link": "\/demos2\/Barry_White_-_Just_the_Way_You_Are.mp3",
+        "link": "\/demos\/Barry_White_-_Just_the_Way_You_Are.mp3",
         "categoria": "internacional",
         "slug_artista": "barry-white"
     },
@@ -6792,7 +6792,7 @@
     {
         "musica": "La Bamba",
         "artista": "Los Lobos",
-        "link": "\/demos2\/Los_Lobos_-_La_Bamba.mp3",
+        "link": "\/demos\/Los_Lobos_-_La_Bamba.mp3",
         "categoria": "internacional",
         "slug_artista": "los-lobos"
     },
@@ -6960,7 +6960,7 @@
     {
         "musica": "Left Behind",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Left_Behind.mp3",
+        "link": "\/demos\/Slipknot_-_Left_Behind.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -7030,7 +7030,7 @@
     {
         "musica": "Let's Stay Together",
         "artista": "Al Green",
-        "link": "\/demos2\/Al_Green_-_Lets_Stay_Together.mp3",
+        "link": "\/demos\/Al_Green_-_Lets_Stay_Together.mp3",
         "categoria": "internacional",
         "slug_artista": "al-green"
     },
@@ -7065,7 +7065,7 @@
     {
         "musica": "Lick It Up",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Lick_It_Up.mp3",
+        "link": "\/demos\/Kiss_-_Lick_It_Up.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -7149,7 +7149,7 @@
     {
         "musica": "Lips Like Sugar",
         "artista": "Echo and the Bunnymen",
-        "link": "\/demos2\/Echo_and_the_Bunnymen_-_Lips_Like_Sugar.mp3",
+        "link": "\/demos\/Echo_and_the_Bunnymen_-_Lips_Like_Sugar.mp3",
         "categoria": "internacional",
         "slug_artista": "echo-and-the-bunnymen"
     },
@@ -7198,14 +7198,14 @@
     {
         "musica": "Live in a Hole",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Live_in_a_Hole.mp3",
+        "link": "\/demos\/Pantera_-_Live_in_a_Hole.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "Livin' La Vida Loca",
         "artista": "Ricky Martin",
-        "link": "\/demos2\/Ricky_Martin_-_Livin_La_Vida_Loca.mp3",
+        "link": "\/demos\/Ricky_Martin_-_Livin_La_Vida_Loca.mp3",
         "categoria": "internacional",
         "slug_artista": "ricky-martin"
     },
@@ -7219,7 +7219,7 @@
     {
         "musica": "Livin' Thing",
         "artista": "Electric Light Orchestra",
-        "link": "\/demos2\/Electric_Light_Orchestra_-_Livin_Thing.mp3",
+        "link": "\/demos\/Electric_Light_Orchestra_-_Livin_Thing.mp3",
         "categoria": "internacional",
         "slug_artista": "electric-light-orchestra"
     },
@@ -7233,28 +7233,28 @@
     {
         "musica": "Living on the Ceiling",
         "artista": "Blancmange",
-        "link": "\/demos2\/Blancmange_-_Living_on_the_Ceiling.mp3",
+        "link": "\/demos\/Blancmange_-_Living_on_the_Ceiling.mp3",
         "categoria": "internacional",
         "slug_artista": "blancmange"
     },
     {
         "musica": "Living Through Me (Hell's Wrath)",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Living_Through_Me.mp3",
+        "link": "\/demos\/Pantera_-_Living_Through_Me.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "Locked Out of Heaven",
         "artista": "Bruno Mars",
-        "link": "\/demos2\/Bruno_Mars_-_Locked_Out_of_Heaven.mp3",
+        "link": "\/demos\/Bruno_Mars_-_Locked_Out_of_Heaven.mp3",
         "categoria": "internacional",
         "slug_artista": "bruno-mars"
     },
     {
         "musica": "London Calling",
         "artista": "The Clash",
-        "link": "\/demos2\/The_Clash_-_London_Calling.mp3",
+        "link": "\/demos\/The_Clash_-_London_Calling.mp3",
         "categoria": "internacional",
         "slug_artista": "the-clash"
     },
@@ -7275,7 +7275,7 @@
     {
         "musica": "Long Black Road",
         "artista": "Electric Light Orchestra",
-        "link": "\/demos2\/Electric_Light_Orchestra_-_Long_Black_Road.mp3",
+        "link": "\/demos\/Electric_Light_Orchestra_-_Long_Black_Road.mp3",
         "categoria": "internacional",
         "slug_artista": "electric-light-orchestra"
     },
@@ -7289,7 +7289,7 @@
     {
         "musica": "Look to the Son (Live)",
         "artista": "Hillsong Worship",
-        "link": "\/demos2\/Hillsong_Worship_-_Look_to_the_Son.mp3",
+        "link": "\/demos\/Hillsong_Worship_-_Look_to_the_Son.mp3",
         "categoria": "internacional",
         "slug_artista": "hillsong-worship"
     },
@@ -7338,21 +7338,21 @@
     {
         "musica": "Love Gun",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Love_Gun.mp3",
+        "link": "\/demos\/Kiss_-_Love_Gun.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
     {
         "musica": "Love is a Losing Game",
         "artista": "Amy Winehouse",
-        "link": "\/demos2\/Amy_Winehouse_-_Love_is_a_Losing_Game.mp3",
+        "link": "\/demos\/Amy_Winehouse_-_Love_is_a_Losing_Game.mp3",
         "categoria": "internacional",
         "slug_artista": "amy-winehouse"
     },
     {
         "musica": "Love is the Answer",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Love_is_the_Answer.mp3",
+        "link": "\/demos\/Weezer_-_Love_is_the_Answer.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -7380,14 +7380,14 @@
     {
         "musica": "Love Never Felt So Good",
         "artista": "Michael Jackson and Justin Timberlake",
-        "link": "\/demos2\/Michael_Jackson_-_Love_Never_Felt_So_Good.mp3",
+        "link": "\/demos\/Michael_Jackson_-_Love_Never_Felt_So_Good.mp3",
         "categoria": "internacional",
         "slug_artista": "michael-jackson"
     },
     {
         "musica": "Love Thing",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Love_Thing.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Love_Thing.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -7457,14 +7457,14 @@
     {
         "musica": "Lunatic Fringe",
         "artista": "Red Rider",
-        "link": "\/demos2\/Red_Rider_-_Lunatic_Fringe.mp3",
+        "link": "\/demos\/Red_Rider_-_Lunatic_Fringe.mp3",
         "categoria": "internacional",
         "slug_artista": "red-rider"
     },
     {
         "musica": "Lux Æterna",
         "artista": "Metallica",
-        "link": "\/demos2\/Metallica_-_Lux_Eterna.mp3",
+        "link": "\/demos\/Metallica_-_Lux_Eterna.mp3",
         "categoria": "internacional",
         "slug_artista": "metallica"
     },
@@ -7520,7 +7520,7 @@
     {
         "musica": "Maggie May",
         "artista": "Rod Stewart",
-        "link": "\/demos2\/Rod_Stewart_-_Maggie_May.mp3",
+        "link": "\/demos\/Rod_Stewart_-_Maggie_May.mp3",
         "categoria": "internacional",
         "slug_artista": "rod-stewart"
     },
@@ -7632,7 +7632,7 @@
     {
         "musica": "Man! I Feel Like a Woman",
         "artista": "Shania Twain",
-        "link": "\/demos2\/Shania_Twain_-_Man_I_Feel_Like_a_Woman.mp3",
+        "link": "\/demos\/Shania_Twain_-_Man_I_Feel_Like_a_Woman.mp3",
         "categoria": "internacional",
         "slug_artista": "shania-twain"
     },
@@ -7723,7 +7723,7 @@
     {
         "musica": "Mary on a Cross",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Mary_on_a_Cross.mp3",
+        "link": "\/demos\/Ghost_-_Mary_on_a_Cross.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -7793,7 +7793,7 @@
     {
         "musica": "Me and Mrs. Jones",
         "artista": "Billy Paul",
-        "link": "\/demos2\/Billy_Paul_-_Me_and_Mrs._Jones.mp3",
+        "link": "\/demos\/Billy_Paul_-_Me_and_Mrs._Jones.mp3",
         "categoria": "internacional",
         "slug_artista": "billy-paul"
     },
@@ -7982,7 +7982,7 @@
     {
         "musica": "Midlife Crisis",
         "artista": "Faith No More",
-        "link": "\/demos2\/Faith_No_More_-_Midlife_Crisis.mp3",
+        "link": "\/demos\/Faith_No_More_-_Midlife_Crisis.mp3",
         "categoria": "internacional",
         "slug_artista": "faith-no-more"
     },
@@ -8038,7 +8038,7 @@
     {
         "musica": "Misery Business",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Misery_Business.mp3",
+        "link": "\/demos\/Paramore_-_Misery_Business.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -8066,7 +8066,7 @@
     {
         "musica": "Modern Day Delilah",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Modern_Day_Delilah.mp3",
+        "link": "\/demos\/Kiss_-_Modern_Day_Delilah.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -8143,7 +8143,7 @@
     {
         "musica": "Mouth for War",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Mouth_for_War.mp3",
+        "link": "\/demos\/Pantera_-_Mouth_for_War.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -8269,7 +8269,7 @@
     {
         "musica": "My Lovin' (You're Never Gonna Get It)",
         "artista": "En Vogue",
-        "link": "\/demos2\/En_Vogue_-_My_Lovin.mp3",
+        "link": "\/demos\/En_Vogue_-_My_Lovin.mp3",
         "categoria": "internacional",
         "slug_artista": "en-vogue"
     },
@@ -8283,7 +8283,7 @@
     {
         "musica": "My Name is Jonas",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_My_Name_is_Jonas.mp3",
+        "link": "\/demos\/Weezer_-_My_Name_is_Jonas.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -8297,7 +8297,7 @@
     {
         "musica": "My Way",
         "artista": "Frank Sinatra",
-        "link": "\/demos2\/Frank_Sinatra_-_My_Way.mp3",
+        "link": "\/demos\/Frank_Sinatra_-_My_Way.mp3",
         "categoria": "internacional",
         "slug_artista": "frank-sinatra"
     },
@@ -8507,7 +8507,7 @@
     {
         "musica": "Never Can Say Goodbye",
         "artista": "Gloria Gaynor",
-        "link": "\/demos2\/Gloria_Gaynor_-_Never_Can_Say_Goodbye.mp3",
+        "link": "\/demos\/Gloria_Gaynor_-_Never_Can_Say_Goodbye.mp3",
         "categoria": "internacional",
         "slug_artista": "gloria-gaynor"
     },
@@ -8528,14 +8528,14 @@
     {
         "musica": "Never Let Me Down Again",
         "artista": "Depeche Mode",
-        "link": "\/demos2\/Depeche_Mode_-_Never_Let_Me_Down_Again.mp3",
+        "link": "\/demos\/Depeche_Mode_-_Never_Let_Me_Down_Again.mp3",
         "categoria": "internacional",
         "slug_artista": "depeche-mode"
     },
     {
         "musica": "Never Tear Us Apart",
         "artista": "INXS",
-        "link": "\/demos2\/INXS_-_Never_Tear_Us_Apart.mp3",
+        "link": "\/demos\/INXS_-_Never_Tear_Us_Apart.mp3",
         "categoria": "internacional",
         "slug_artista": "inxs"
     },
@@ -8556,7 +8556,7 @@
     {
         "musica": "New York, New York",
         "artista": "Frank Sinatra",
-        "link": "\/demos2\/Frank_Sinatra_-_New_York_New_York.mp3",
+        "link": "\/demos\/Frank_Sinatra_-_New_York_New_York.mp3",
         "categoria": "internacional",
         "slug_artista": "frank-sinatra"
     },
@@ -8619,7 +8619,7 @@
     {
         "musica": "No Good (Attack the Radical)",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_No_Good.mp3",
+        "link": "\/demos\/Pantera_-_No_Good.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -9144,14 +9144,14 @@
     {
         "musica": "One and Only",
         "artista": "Queensrÿche",
-        "link": "\/demos2\/Queensryche_-_One_and_Only.mp3",
+        "link": "\/demos\/Queensryche_-_One_and_Only.mp3",
         "categoria": "internacional",
         "slug_artista": "queensryche"
     },
     {
         "musica": "One Love (People Get Ready)",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_One_Love.mp3",
+        "link": "\/demos\/Bob_Marley_-_One_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -9298,7 +9298,7 @@
     {
         "musica": "Over the Hills and Far Away",
         "artista": "Gary Moore",
-        "link": "\/demos2\/Gary_Moore_-_Over_the_Hills_and_Far_Away.mp3",
+        "link": "\/demos\/Gary_Moore_-_Over_the_Hills_and_Far_Away.mp3",
         "categoria": "internacional",
         "slug_artista": "gary-moore"
     },
@@ -9445,7 +9445,7 @@
     {
         "musica": "Papa Was a Rollin' Stone",
         "artista": "The Temptations",
-        "link": "\/demos2\/The_Temptations_-_Papa_Was_a_Rollin_Stone.mp3",
+        "link": "\/demos\/The_Temptations_-_Papa_Was_a_Rollin_Stone.mp3",
         "categoria": "internacional",
         "slug_artista": "the-temptations"
     },
@@ -9529,7 +9529,7 @@
     {
         "musica": "Parisienne Walkways",
         "artista": "Gary Moore",
-        "link": "\/demos2\/Gary_Moore_-_Parisienne_Walkways.mp3",
+        "link": "\/demos\/Gary_Moore_-_Parisienne_Walkways.mp3",
         "categoria": "internacional",
         "slug_artista": "gary-moore"
     },
@@ -9543,7 +9543,7 @@
     {
         "musica": "Party for Two",
         "artista": "Shania Twain",
-        "link": "\/demos2\/Shania_Twain_-_Party_for_Two.mp3",
+        "link": "\/demos\/Shania_Twain_-_Party_for_Two.mp3",
         "categoria": "internacional",
         "slug_artista": "shania-twain"
     },
@@ -9662,7 +9662,7 @@
     {
         "musica": "People Are People",
         "artista": "Depeche Mode",
-        "link": "\/demos2\/Depeche_Mode_-_People_Are_People.mp3",
+        "link": "\/demos\/Depeche_Mode_-_People_Are_People.mp3",
         "categoria": "internacional",
         "slug_artista": "depeche-mode"
     },
@@ -9704,7 +9704,7 @@
     {
         "musica": "Personal Jesus",
         "artista": "Depeche Mode",
-        "link": "\/demos2\/Depeche_Mode_-_Personal_Jesus.mp3",
+        "link": "\/demos\/Depeche_Mode_-_Personal_Jesus.mp3",
         "categoria": "internacional",
         "slug_artista": "depeche-mode"
     },
@@ -9802,7 +9802,7 @@
     {
         "musica": "Piss",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Piss.mp3",
+        "link": "\/demos\/Pantera_-_Piss.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -9830,7 +9830,7 @@
     {
         "musica": "Play With Me",
         "artista": "Extreme",
-        "link": "\/demos2\/Extreme_-_Play_With_Me.mp3",
+        "link": "\/demos\/Extreme_-_Play_With_Me.mp3",
         "categoria": "internacional",
         "slug_artista": "extreme"
     },
@@ -9872,7 +9872,7 @@
     {
         "musica": "Policy of Truth",
         "artista": "Depeche Mode",
-        "link": "\/demos2\/Depeche_Mode_-_Policy_of_Truth.mp3",
+        "link": "\/demos\/Depeche_Mode_-_Policy_of_Truth.mp3",
         "categoria": "internacional",
         "slug_artista": "depeche-mode"
     },
@@ -9963,7 +9963,7 @@
     {
         "musica": "Pork and Beans",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Pork_and_Beans.mp3",
+        "link": "\/demos\/Weezer_-_Pork_and_Beans.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -10040,7 +10040,7 @@
     {
         "musica": "Pressure",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Pressure.mp3",
+        "link": "\/demos\/Paramore_-_Pressure.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -10061,7 +10061,7 @@
     {
         "musica": "Pride and Joy",
         "artista": "Stevie Ray Vaughan",
-        "link": "\/demos2\/Stevie_Ray_Vaughan_-_Pride_and_Joy.mp3",
+        "link": "\/demos\/Stevie_Ray_Vaughan_-_Pride_and_Joy.mp3",
         "categoria": "internacional",
         "slug_artista": "stevie-ray-vaughan"
     },
@@ -10145,7 +10145,7 @@
     {
         "musica": "Psychosocial",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Psychosocial.mp3",
+        "link": "\/demos\/Slipknot_-_Psychosocial.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -10166,7 +10166,7 @@
     {
         "musica": "Pulse of the Maggots",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Pulse_of_the_Maggots.mp3",
+        "link": "\/demos\/Slipknot_-_Pulse_of_the_Maggots.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -10383,14 +10383,14 @@
     {
         "musica": "Raindrops Keep Fallin' On My Head",
         "artista": "B.J. Thomas",
-        "link": "\/demos2\/BJ_Thomas_-_Raindrops_Keep_Fallin_On_My_Head.mp3",
+        "link": "\/demos\/BJ_Thomas_-_Raindrops_Keep_Fallin_On_My_Head.mp3",
         "categoria": "internacional",
         "slug_artista": "bj-thomas"
     },
     {
         "musica": "Raining Blood",
         "artista": "Slayer",
-        "link": "\/demos2\/Slayer_-_Raining_Blood.mp3",
+        "link": "\/demos\/Slayer_-_Raining_Blood.mp3",
         "categoria": "internacional",
         "slug_artista": "slayer"
     },
@@ -10418,7 +10418,7 @@
     {
         "musica": "Rats",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Rats.mp3",
+        "link": "\/demos\/Ghost_-_Rats.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -10432,7 +10432,7 @@
     {
         "musica": "Rebellion",
         "artista": "Linkin Park",
-        "link": "\/demos2\/Linkin_Park_-_Rebellion.mp3",
+        "link": "\/demos\/Linkin_Park_-_Rebellion.mp3",
         "categoria": "internacional",
         "slug_artista": "linkin-park"
     },
@@ -10474,14 +10474,14 @@
     {
         "musica": "Regret",
         "artista": "New Order",
-        "link": "\/demos2\/New_Order_-_Regret.mp3",
+        "link": "\/demos\/New_Order_-_Regret.mp3",
         "categoria": "internacional",
         "slug_artista": "new-order"
     },
     {
         "musica": "Regular People",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Regular_People.mp3",
+        "link": "\/demos\/Pantera_-_Regular_People.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -10495,7 +10495,7 @@
     {
         "musica": "Relax",
         "artista": "Frankie Goes to Hollywood",
-        "link": "\/demos2\/Frankie_Goes_to_Hollywood_-_Relax.mp3",
+        "link": "\/demos\/Frankie_Goes_to_Hollywood_-_Relax.mp3",
         "categoria": "internacional",
         "slug_artista": "frankie-goes-to-hollywood"
     },
@@ -10635,7 +10635,7 @@
     {
         "musica": "Rise",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Rise.mp3",
+        "link": "\/demos\/Pantera_-_Rise.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -10663,7 +10663,7 @@
     {
         "musica": "Rock and Roll All Nite",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Rock_and_Roll_All_Nite.mp3",
+        "link": "\/demos\/Kiss_-_Rock_and_Roll_All_Nite.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -10782,7 +10782,7 @@
     {
         "musica": "Roundabout",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_Roundabout.mp3",
+        "link": "\/demos\/Yes_-_Roundabout.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -10796,14 +10796,14 @@
     {
         "musica": "Rubina",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Rubina.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Rubina.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
     {
         "musica": "Rude",
         "artista": "Magic!",
-        "link": "\/demos2\/Magic_-_Rude.mp3",
+        "link": "\/demos\/Magic_-_Rude.mp3",
         "categoria": "internacional",
         "slug_artista": "magic"
     },
@@ -10971,7 +10971,7 @@
     {
         "musica": "Satch Boogie",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Satch_Boogie.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Satch_Boogie.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -10992,7 +10992,7 @@
     {
         "musica": "Say It Ain't So",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Say_It_Aint_So.mp3",
+        "link": "\/demos\/Weezer_-_Say_It_Aint_So.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -11013,7 +11013,7 @@
     {
         "musica": "Screaming for Vengeance",
         "artista": "Judas Priest",
-        "link": "\/demos2\/Judas_Priest_-_Screaming_for_Vengeance.mp3",
+        "link": "\/demos\/Judas_Priest_-_Screaming_for_Vengeance.mp3",
         "categoria": "internacional",
         "slug_artista": "judas-priest"
     },
@@ -11048,7 +11048,7 @@
     {
         "musica": "Seasons in the Abyss",
         "artista": "Slayer",
-        "link": "\/demos2\/Slayer_-_Seasons_in_the_Abyss.mp3",
+        "link": "\/demos\/Slayer_-_Seasons_in_the_Abyss.mp3",
         "categoria": "internacional",
         "slug_artista": "slayer"
     },
@@ -11153,7 +11153,7 @@
     {
         "musica": "Separate Ways (Worlds Apart)",
         "artista": "Journey",
-        "link": "\/demos2\/Journey_-_Separate_Ways.mp3",
+        "link": "\/demos\/Journey_-_Separate_Ways.mp3",
         "categoria": "internacional",
         "slug_artista": "journey"
     },
@@ -11342,7 +11342,7 @@
     {
         "musica": "Shoot the Runner",
         "artista": "Kasabian",
-        "link": "\/demos2\/Kasabian_-_Shoot_the_Runner.mp3",
+        "link": "\/demos\/Kasabian_-_Shoot_the_Runner.mp3",
         "categoria": "internacional",
         "slug_artista": "kasabian"
     },
@@ -11356,7 +11356,7 @@
     {
         "musica": "Should I Stay or Should I Go",
         "artista": "The Clash",
-        "link": "\/demos2\/The_Clash_-_Should_I_Stay_or_Should_I_Go.mp3",
+        "link": "\/demos\/The_Clash_-_Should_I_Stay_or_Should_I_Go.mp3",
         "categoria": "internacional",
         "slug_artista": "the-clash"
     },
@@ -11377,7 +11377,7 @@
     {
         "musica": "Silent Lucidity",
         "artista": "Queensrÿche",
-        "link": "\/demos2\/Queensryche_-_Silent_Lucidity.mp3",
+        "link": "\/demos\/Queensryche_-_Silent_Lucidity.mp3",
         "categoria": "internacional",
         "slug_artista": "queensryche"
     },
@@ -11531,7 +11531,7 @@
     {
         "musica": "Snuff",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Snuff.mp3",
+        "link": "\/demos\/Slipknot_-_Snuff.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -11552,7 +11552,7 @@
     {
         "musica": "So Into You",
         "artista": "Atlanta Rhythm Section",
-        "link": "\/demos2\/Atlanta_Rhythm_Section_-_So_Into_You.mp3",
+        "link": "\/demos\/Atlanta_Rhythm_Section_-_So_Into_You.mp3",
         "categoria": "internacional",
         "slug_artista": "atlanta-rhythm-section"
     },
@@ -11685,7 +11685,7 @@
     {
         "musica": "Something About You",
         "artista": "Level 42",
-        "link": "\/demos2\/Level_42_-_Something_About_You.mp3",
+        "link": "\/demos\/Level_42_-_Something_About_You.mp3",
         "categoria": "internacional",
         "slug_artista": "level-42"
     },
@@ -11748,7 +11748,7 @@
     {
         "musica": "South of Heaven",
         "artista": "Slayer",
-        "link": "\/demos2\/Slayer_-_South_of_Heaven.mp3",
+        "link": "\/demos\/Slayer_-_South_of_Heaven.mp3",
         "categoria": "internacional",
         "slug_artista": "slayer"
     },
@@ -11769,14 +11769,14 @@
     {
         "musica": "Spooky",
         "artista": "Atlanta Rhythm Section",
-        "link": "\/demos2\/Atlanta_Rhythm_Section_-_Spooky.mp3",
+        "link": "\/demos\/Atlanta_Rhythm_Section_-_Spooky.mp3",
         "categoria": "internacional",
         "slug_artista": "atlanta-rhythm-section"
     },
     {
         "musica": "Square Hammer",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Square_Hammer.mp3",
+        "link": "\/demos\/Ghost_-_Square_Hammer.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -11790,7 +11790,7 @@
     {
         "musica": "Stand Back",
         "artista": "Stevie Nicks",
-        "link": "\/demos2\/Stevie_Nicks_-_Stand_Back.mp3",
+        "link": "\/demos\/Stevie_Nicks_-_Stand_Back.mp3",
         "categoria": "internacional",
         "slug_artista": "stevie-nicks"
     },
@@ -11811,7 +11811,7 @@
     {
         "musica": "Starship Trooper",
         "artista": "Yes",
-        "link": "\/demos2\/Yes_-_Starship_Trooper.mp3",
+        "link": "\/demos\/Yes_-_Starship_Trooper.mp3",
         "categoria": "internacional",
         "slug_artista": "yes"
     },
@@ -11860,14 +11860,14 @@
     {
         "musica": "Still Got the Blues",
         "artista": "Gary Moore",
-        "link": "\/demos2\/Gary_Moore_-_Still_Got_the_Blues.mp3",
+        "link": "\/demos\/Gary_Moore_-_Still_Got_the_Blues.mp3",
         "categoria": "internacional",
         "slug_artista": "gary-moore"
     },
     {
         "musica": "Still Into You",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Still_Into_You.mp3",
+        "link": "\/demos\/Paramore_-_Still_Into_You.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -11881,7 +11881,7 @@
     {
         "musica": "Stir It Up",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Stir_It_Up.mp3",
+        "link": "\/demos\/Bob_Marley_-_Stir_It_Up.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -11923,7 +11923,7 @@
     {
         "musica": "Strutter",
         "artista": "Kiss",
-        "link": "\/demos2\/Kiss_-_Strutter.mp3",
+        "link": "\/demos\/Kiss_-_Strutter.mp3",
         "categoria": "internacional",
         "slug_artista": "kiss"
     },
@@ -11972,7 +11972,7 @@
     {
         "musica": "Suicide Note, Part II",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Suicide_Note_Part_II.mp3",
+        "link": "\/demos\/Pantera_-_Suicide_Note_Part_II.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -11986,7 +11986,7 @@
     {
         "musica": "Sulfur",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Sulfur.mp3",
+        "link": "\/demos\/Slipknot_-_Sulfur.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
@@ -12014,7 +12014,7 @@
     {
         "musica": "Summer Song",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Summer_Song.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Summer_Song.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -12098,7 +12098,7 @@
     {
         "musica": "Surfing with the Alien",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_Surfing_with_the_Alien.mp3",
+        "link": "\/demos\/Joe_Satriani_-_Surfing_with_the_Alien.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
@@ -12287,7 +12287,7 @@
     {
         "musica": "Tears Dry On Their Own",
         "artista": "Amy Winehouse",
-        "link": "\/demos2\/Amy_Winehouse_-_Tears_Dry_On_Their_Own.mp3",
+        "link": "\/demos\/Amy_Winehouse_-_Tears_Dry_On_Their_Own.mp3",
         "categoria": "internacional",
         "slug_artista": "amy-winehouse"
     },
@@ -12441,14 +12441,14 @@
     {
         "musica": "That's What I Like",
         "artista": "Jive Bunny and the Mastermixers",
-        "link": "\/demos2\/Jive_Bunny_and_the_Mastermixers_-_Thats_What_I_Like.mp3",
+        "link": "\/demos\/Jive_Bunny_and_the_Mastermixers_-_Thats_What_I_Like.mp3",
         "categoria": "internacional",
         "slug_artista": "jive-bunny-and-the-mastermixers"
     },
     {
         "musica": "That's What You Get",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_Thats_What_You_Get.mp3",
+        "link": "\/demos\/Paramore_-_Thats_What_You_Get.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -12462,7 +12462,7 @@
     {
         "musica": "The Boys Are Back in Town",
         "artista": "Thin Lizzy",
-        "link": "\/demos2\/Thin_Lizzy_-_The_Boys_Are_Back_in_Town.mp3",
+        "link": "\/demos\/Thin_Lizzy_-_The_Boys_Are_Back_in_Town.mp3",
         "categoria": "internacional",
         "slug_artista": "thin-lizzy"
     },
@@ -12518,7 +12518,7 @@
     {
         "musica": "The Good Life",
         "artista": "Ray Charles",
-        "link": "\/demos2\/Ray_Charles_-_The_Good_Life.mp3",
+        "link": "\/demos\/Ray_Charles_-_The_Good_Life.mp3",
         "categoria": "internacional",
         "slug_artista": "ray-charles"
     },
@@ -12532,14 +12532,14 @@
     {
         "musica": "The Great Southern Trendkill",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_The_Great_Southern_Trendkill.mp3",
+        "link": "\/demos\/Pantera_-_The_Great_Southern_Trendkill.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "The Greatest Man That Ever Lived (Variations on a Shaker Hymn)",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_The_Greatest_Man_That_Ever_Lived.mp3",
+        "link": "\/demos\/Weezer_-_The_Greatest_Man_That_Ever_Lived.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -12553,7 +12553,7 @@
     {
         "musica": "The Hellion\/Electric Eye",
         "artista": "Judas Priest",
-        "link": "\/demos2\/Judas_Priest_-_The_Hellion-Electric_Eye.mp3",
+        "link": "\/demos\/Judas_Priest_-_The_Hellion-Electric_Eye.mp3",
         "categoria": "internacional",
         "slug_artista": "judas-priest"
     },
@@ -12567,14 +12567,14 @@
     {
         "musica": "The Killing Jar",
         "artista": "Siouxsie and the Banshees",
-        "link": "\/demos2\/Siouxsie_and_the_Banshees_-_The_Killing_Jar.mp3",
+        "link": "\/demos\/Siouxsie_and_the_Banshees_-_The_Killing_Jar.mp3",
         "categoria": "internacional",
         "slug_artista": "siouxsie-and-the-banshees"
     },
     {
         "musica": "The Killing Moon",
         "artista": "Echo and the Bunnymen",
-        "link": "\/demos2\/Echo_and_the_Bunnymen_-_The_Killing_Moon.mp3",
+        "link": "\/demos\/Echo_and_the_Bunnymen_-_The_Killing_Moon.mp3",
         "categoria": "internacional",
         "slug_artista": "echo-and-the-bunnymen"
     },
@@ -12616,7 +12616,7 @@
     {
         "musica": "The Look of Love",
         "artista": "ABC",
-        "link": "\/demos2\/ABC_-_The_Look_of_Love.mp3",
+        "link": "\/demos\/ABC_-_The_Look_of_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "abc"
     },
@@ -12630,7 +12630,7 @@
     {
         "musica": "The More You Live, The More You Love",
         "artista": "A Flock of Seagulls",
-        "link": "\/demos2\/A_Flock_of_Seagulls_-_The_More_You_Live_The_More_You_Love.mp3",
+        "link": "\/demos\/A_Flock_of_Seagulls_-_The_More_You_Live_The_More_You_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "a-flock-of-seagulls"
     },
@@ -12658,7 +12658,7 @@
     {
         "musica": "The Only Exception",
         "artista": "Paramore",
-        "link": "\/demos2\/Paramore_-_The_Only_Exception.mp3",
+        "link": "\/demos\/Paramore_-_The_Only_Exception.mp3",
         "categoria": "internacional",
         "slug_artista": "paramore"
     },
@@ -12742,7 +12742,7 @@
     {
         "musica": "The Thin Line",
         "artista": "Queensrÿche",
-        "link": "\/demos2\/Queensryche_-_The_Thin_Line.mp3",
+        "link": "\/demos\/Queensryche_-_The_Thin_Line.mp3",
         "categoria": "internacional",
         "slug_artista": "queensryche"
     },
@@ -12770,7 +12770,7 @@
     {
         "musica": "The Underground in America",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_The_Underground_in_America.mp3",
+        "link": "\/demos\/Pantera_-_The_Underground_in_America.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -12861,14 +12861,14 @@
     {
         "musica": "This Love",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_This_Love.mp3",
+        "link": "\/demos\/Pantera_-_This_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
     {
         "musica": "Three Little Birds",
         "artista": "Bob Marley",
-        "link": "\/demos2\/Bob_Marley_-_Three_Little_Birds.mp3",
+        "link": "\/demos\/Bob_Marley_-_Three_Little_Birds.mp3",
         "categoria": "internacional",
         "slug_artista": "bob-marley"
     },
@@ -12938,7 +12938,7 @@
     {
         "musica": "Tired of Being Alone",
         "artista": "Al Green",
-        "link": "\/demos2\/Al_Green_-_Tired_of_Being_Alone.mp3",
+        "link": "\/demos\/Al_Green_-_Tired_of_Being_Alone.mp3",
         "categoria": "internacional",
         "slug_artista": "al-green"
     },
@@ -13008,7 +13008,7 @@
     {
         "musica": "Tonight's the Night (Gonna Be Alright)",
         "artista": "Rod Stewart",
-        "link": "\/demos2\/Rod_Stewart_-_Tonights_the_Night.mp3",
+        "link": "\/demos\/Rod_Stewart_-_Tonights_the_Night.mp3",
         "categoria": "internacional",
         "slug_artista": "rod-stewart"
     },
@@ -13064,7 +13064,7 @@
     {
         "musica": "Train of Consequences",
         "artista": "Megadeth",
-        "link": "\/demos2\/Megadeth_-_Train_of_Consequences.mp3",
+        "link": "\/demos\/Megadeth_-_Train_of_Consequences.mp3",
         "categoria": "internacional",
         "slug_artista": "megadeth"
     },
@@ -13113,7 +13113,7 @@
     {
         "musica": "Troublemaker",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Troublemaker.mp3",
+        "link": "\/demos\/Weezer_-_Troublemaker.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -13127,7 +13127,7 @@
     {
         "musica": "True Faith",
         "artista": "New Order",
-        "link": "\/demos2\/New_Order_-_True_Faith.mp3",
+        "link": "\/demos\/New_Order_-_True_Faith.mp3",
         "categoria": "internacional",
         "slug_artista": "new-order"
     },
@@ -13204,7 +13204,7 @@
     {
         "musica": "Two Princes",
         "artista": "Spin Doctors",
-        "link": "\/demos2\/Spin_Doctors_-_Two_Princes.mp3",
+        "link": "\/demos\/Spin_Doctors_-_Two_Princes.mp3",
         "categoria": "internacional",
         "slug_artista": "spin-doctors"
     },
@@ -13316,7 +13316,7 @@
     {
         "musica": "Undone (The Sweater Song)",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Undone.mp3",
+        "link": "\/demos\/Weezer_-_Undone.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -13659,14 +13659,14 @@
     {
         "musica": "Wait and Bleed",
         "artista": "Slipknot",
-        "link": "\/demos2\/Slipknot_-_Wait_and_Bleed.mp3",
+        "link": "\/demos\/Slipknot_-_Wait_and_Bleed.mp3",
         "categoria": "internacional",
         "slug_artista": "slipknot"
     },
     {
         "musica": "Waiting for a Girl Like You",
         "artista": "Foreigner",
-        "link": "\/demos2\/Foreigner_-_Waiting_for_a_Girl_Like_You.mp3",
+        "link": "\/demos\/Foreigner_-_Waiting_for_a_Girl_Like_You.mp3",
         "categoria": "internacional",
         "slug_artista": "foreigner"
     },
@@ -13694,7 +13694,7 @@
     {
         "musica": "Walk",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_Walk.mp3",
+        "link": "\/demos\/Pantera_-_Walk.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -13708,7 +13708,7 @@
     {
         "musica": "Walking On Sunshine",
         "artista": "Katrina and the Waves",
-        "link": "\/demos2\/Katrina_and_the_Waves_-_Walking_On_Sunshine.mp3",
+        "link": "\/demos\/Katrina_and_the_Waves_-_Walking_On_Sunshine.mp3",
         "categoria": "internacional",
         "slug_artista": "katrina-and-the-waves"
     },
@@ -13729,14 +13729,14 @@
     {
         "musica": "War",
         "artista": "Joe Satriani",
-        "link": "\/demos2\/Joe_Satriani_-_War.mp3",
+        "link": "\/demos\/Joe_Satriani_-_War.mp3",
         "categoria": "internacional",
         "slug_artista": "joe-satriani"
     },
     {
         "musica": "War Nerve",
         "artista": "Pantera",
-        "link": "\/demos2\/Pantera_-_War_Nerve.mp3",
+        "link": "\/demos\/Pantera_-_War_Nerve.mp3",
         "categoria": "internacional",
         "slug_artista": "pantera"
     },
@@ -13750,14 +13750,14 @@
     {
         "musica": "Warm and Tender Love",
         "artista": "Percy Sledge",
-        "link": "\/demos2\/Percy_Sledge_-_Warm_and_Tender_Love.mp3",
+        "link": "\/demos\/Percy_Sledge_-_Warm_and_Tender_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "percy-sledge"
     },
     {
         "musica": "Waste a Moment",
         "artista": "Kings of Leon",
-        "link": "\/demos2\/Kings_of_Leon_-_Waste_a_Moment.mp3",
+        "link": "\/demos\/Kings_of_Leon_-_Waste_a_Moment.mp3",
         "categoria": "internacional",
         "slug_artista": "kings-of-leon"
     },
@@ -13785,7 +13785,7 @@
     {
         "musica": "We Are Family",
         "artista": "Sister Sledge",
-        "link": "\/demos2\/Sister_Sledge_-_We_Are_Family.mp3",
+        "link": "\/demos\/Sister_Sledge_-_We_Are_Family.mp3",
         "categoria": "internacional",
         "slug_artista": "sister-sledge"
     },
@@ -13799,7 +13799,7 @@
     {
         "musica": "We Built This City",
         "artista": "Starship",
-        "link": "\/demos2\/Starship_-_We_Built_This_City.mp3",
+        "link": "\/demos\/Starship_-_We_Built_This_City.mp3",
         "categoria": "internacional",
         "slug_artista": "starship"
     },
@@ -13813,7 +13813,7 @@
     {
         "musica": "We Care a Lot",
         "artista": "Faith No More",
-        "link": "\/demos2\/Faith_No_More_-_We_Care_a_Lot.mp3",
+        "link": "\/demos\/Faith_No_More_-_We_Care_a_Lot.mp3",
         "categoria": "internacional",
         "slug_artista": "faith-no-more"
     },
@@ -13834,7 +13834,7 @@
     {
         "musica": "We're an American Band",
         "artista": "Grand Funk Railroad",
-        "link": "\/demos2\/Grand_Funk_Railroad_-_Were_an_American_Band.mp3",
+        "link": "\/demos\/Grand_Funk_Railroad_-_Were_an_American_Band.mp3",
         "categoria": "internacional",
         "slug_artista": "grand-funk-railroad"
     },
@@ -13876,14 +13876,14 @@
     {
         "musica": "What a Beautiful Name (Live)",
         "artista": "Hillsong Worship",
-        "link": "\/demos2\/Hillsong_Worship_-_What_a_Beautiful_Name.mp3",
+        "link": "\/demos\/Hillsong_Worship_-_What_a_Beautiful_Name.mp3",
         "categoria": "internacional",
         "slug_artista": "hillsong-worship"
     },
     {
         "musica": "What a Fool Believes",
         "artista": "The Doobie Brothers",
-        "link": "\/demos2\/The_Doobie_Brothers_-_What_a_Fool_Believes.mp3",
+        "link": "\/demos\/The_Doobie_Brothers_-_What_a_Fool_Believes.mp3",
         "categoria": "internacional",
         "slug_artista": "the-doobie-brothers"
     },
@@ -13911,7 +13911,7 @@
     {
         "musica": "What is Love",
         "artista": "Haddaway",
-        "link": "\/demos2\/Haddaway_-_What_is_Love.mp3",
+        "link": "\/demos\/Haddaway_-_What_is_Love.mp3",
         "categoria": "internacional",
         "slug_artista": "haddaway"
     },
@@ -13925,7 +13925,7 @@
     {
         "musica": "When a Man Loves a Woman",
         "artista": "Percy Sledge",
-        "link": "\/demos2\/Percy_Sledge_-_When_a_Man_Loves_a_Woman.mp3",
+        "link": "\/demos\/Percy_Sledge_-_When_a_Man_Loves_a_Woman.mp3",
         "categoria": "internacional",
         "slug_artista": "percy-sledge"
     },
@@ -13946,7 +13946,7 @@
     {
         "musica": "Wherever I May Roam",
         "artista": "Metallica",
-        "link": "\/demos2\/Metallica_-_Wherever_I_May_Roam.mp3",
+        "link": "\/demos\/Metallica_-_Wherever_I_May_Roam.mp3",
         "categoria": "internacional",
         "slug_artista": "metallica"
     },
@@ -13981,7 +13981,7 @@
     {
         "musica": "Whiskey in the Jar",
         "artista": "Metallica",
-        "link": "\/demos2\/Metallica_-_Whiskey_in_the_Jar.mp3",
+        "link": "\/demos\/Metallica_-_Whiskey_in_the_Jar.mp3",
         "categoria": "internacional",
         "slug_artista": "metallica"
     },
@@ -14023,7 +14023,7 @@
     {
         "musica": "Why Bother",
         "artista": "Weezer",
-        "link": "\/demos2\/Weezer_-_Why_Bother.mp3",
+        "link": "\/demos\/Weezer_-_Why_Bother.mp3",
         "categoria": "internacional",
         "slug_artista": "weezer"
     },
@@ -14142,7 +14142,7 @@
     {
         "musica": "Year Zero",
         "artista": "Ghost",
-        "link": "\/demos2\/Ghost_-_Year_Zero.mp3",
+        "link": "\/demos\/Ghost_-_Year_Zero.mp3",
         "categoria": "internacional",
         "slug_artista": "ghost"
     },
@@ -14303,7 +14303,7 @@
     {
         "musica": "You're Still the One",
         "artista": "Shania Twain",
-        "link": "\/demos2\/Shania_Twain_-_Youre_Still_the_One.mp3",
+        "link": "\/demos\/Shania_Twain_-_Youre_Still_the_One.mp3",
         "categoria": "internacional",
         "slug_artista": "shania-twain"
     },
@@ -14317,7 +14317,7 @@
     {
         "musica": "You've Got Another Thing Comin'",
         "artista": "Judas Priest",
-        "link": "\/demos2\/Judas_Priest_-_Youve_Got_Another_Thing_Comin.mp3",
+        "link": "\/demos\/Judas_Priest_-_Youve_Got_Another_Thing_Comin.mp3",
         "categoria": "internacional",
         "slug_artista": "judas-priest"
     },
@@ -14352,7 +14352,7 @@
     {
         "musica": "Your Ways",
         "artista": "The Jackson 5",
-        "link": "\/demos2\/The_Jacksons_-_Your_Ways.mp3",
+        "link": "\/demos\/The_Jacksons_-_Your_Ways.mp3",
         "categoria": "internacional",
         "slug_artista": "the-jackson-5"
     },
