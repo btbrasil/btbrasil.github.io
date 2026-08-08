@@ -9,13 +9,13 @@
     /* Coluna 1 (Música + Player): Dá mais espaço (60%) */
     .table thead th:nth-child(1), 
     .table td:nth-child(1) {
-        width: 60%;
+        width: 65%;
     }
 
     /* Coluna 2 (Artista): Espaço moderado (30%) */
     .table thead th:nth-child(2), 
     .table td:nth-child(2) {
-        width: 30%;
+        width: 25%;
         font-size: 12px; /* Diminuímos um pouco o artista para caber melhor */
     }
 
