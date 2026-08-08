@@ -81,23 +81,49 @@ $(document).ready(function () {
         renderNextBatch();
     });
 
-    // 5. Player de Áudio (CORRIGIDO PARA NETLIFY)
+    // 5. Player de Áudio (Suporte a Netlify e Dropbox)
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
-        let urlJSON = btn.data('link'); // Pega "/demos/Arquivo.mp3"
+        let urlJSON = btn.data('link'); // Pode ser "/demos/..." ou "https://..."
+        let urlFinal = "";
 
-        // TRUQUE: Remove "/demos/" e soma com o link do Netlify
-        // O encodeURI resolve problemas com caracteres especiais no nome do arquivo
-        const urlFinal = BASE_URL_NETLIFY + encodeURI(urlJSON.replace('/demos/', '/'));
+        // 1. IDENTIFICA SE O LINK É EXTERNO (Dropbox) OU INTERNO (Netlify)
+        if (urlJSON.startsWith('http')) {
+            // Se o link já começa com http, é do Dropbox. Usamos ele exatamente como está.
+            urlFinal = urlJSON;
+        } else {
+            // Se não tem http, é um caminho do antigo HostGator.
+            // Limpamos o "/demos/" e jogamos para o Netlify.
+            let nomeArquivo = urlJSON.replace('/demos/', '');
+            urlFinal = BASE_URL_NETLIFY + '/' + nomeArquivo;
+        }
+
+        console.log("Tentando tocar:", urlFinal);
 
         if (currentAudio.src === urlFinal && !currentAudio.paused) {
             currentAudio.pause();
             btn.text('▶');
         } else {
+            // Reseta botões e carrega a nova música
             $('.player-btn').text('▶');
+            
+            // Importante para links do Dropbox: Garantir que o src mude
             currentAudio.src = urlFinal;
-            currentAudio.play().catch(e => console.error("Erro ao tocar:", e));
-            btn.text('⏸');
+            currentAudio.load(); 
+            
+            currentAudio.play().then(() => {
+                btn.text('⏸');
+            }).catch(e => {
+                console.error("Erro ao tocar:", e);
+                // Tentativa de correção para nomes com espaços ou caracteres especiais
+                if (!urlJSON.startsWith('http')) {
+                    let nomeEscapado = encodeURIComponent(urlJSON.replace('/demos/', '')).replace(/%2F/g, '/');
+                    currentAudio.src = BASE_URL_NETLIFY + '/' + nomeEscapado;
+                    currentAudio.play().then(() => btn.text('⏸')).catch(err => alert("Erro ao carregar áudio."));
+                } else {
+                    alert("Não foi possível tocar esta demo do Dropbox. Verifique o link.");
+                }
+            });
         }
     });
 
