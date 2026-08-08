@@ -8,8 +8,10 @@ $(document).ready(function () {
     let currentIndex = 0;
     let avisoNavegacaoExibido = false;
 
+    // --- CONFIGURAÇÃO DO SERVIDOR DE MÚSICAS ---
     const BASE_URL_NETLIFY = "https://demos-backingtrackbrasil.netlify.app";
 
+    // 1. Carregar Dados e Organizar por Título da Música
     $.getJSON('tracks.json', function(data) {
         allTracks = data.sort((a, b) => {
             let comp = a.musica.localeCompare(b.musica, 'pt-BR', { sensitivity: 'base' });
@@ -20,9 +22,10 @@ $(document).ready(function () {
         renderNextBatch();
         updateUI();
     }).fail(function() {
-        alert("Erro ao carregar a lista de músicas.");
+        console.error("Erro ao carregar tracks.json");
     });
 
+    // 2. Renderização por Demanda (Lazy Load)
     function renderNextBatch() {
         const nextBatch = filteredData.slice(currentIndex, currentIndex + itemsPerBatch);
         let html = '';
@@ -48,8 +51,9 @@ $(document).ready(function () {
         $('#loading-msg').hide();
     }
 
+    // 3. Scroll Infinito
     $(window).scroll(function() {
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 300) {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 400) {
             if (currentIndex < filteredData.length) {
                 $('#loading-msg').show();
                 renderNextBatch();
@@ -57,6 +61,7 @@ $(document).ready(function () {
         }
     });
 
+    // 4. Busca
     $('#myInput').on('keyup', function() {
         const query = $(this).val().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         filteredData = allTracks.filter(t => {
@@ -69,40 +74,52 @@ $(document).ready(function () {
         renderNextBatch();
     });
 
-    // --- PLAYER DE ÁUDIO CORRIGIDO ---
+    // 5. Player de Áudio (CORRIGIDO E SEGURO)
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
-        let urlJSON = btn.data('link'); 
+        const urlOriginal = btn.data('link'); 
         let urlFinal = "";
 
-        // Verifica se o link já é completo (Dropbox/HTTP) ou se é apenas o caminho (Netlify)
-        if (urlJSON.indexOf('http') === 0) {
-            urlFinal = urlJSON;
+        // LÓGICA DE SEPARAÇÃO: Dropbox vs Netlify
+        if (urlOriginal.includes('http')) {
+            // Se tem HTTP, é link direto (Dropbox). Usamos como está.
+            urlFinal = urlOriginal;
         } else {
-            let nomeLimpo = urlJSON.replace('/demos/', '');
-            urlFinal = BASE_URL_NETLIFY + '/' + nomeLimpo;
+            // Se não tem, limpamos o "/demos/" e montamos para o Netlify
+            const arquivoLimpo = urlOriginal.replace('/demos/', '');
+            // encodeURI lida com espaços e acentos no nome do arquivo MP3
+            urlFinal = BASE_URL_NETLIFY + '/' + encodeURI(arquivoLimpo);
         }
 
-        console.log("DEBUG - Input JSON:", urlJSON);
-        console.log("DEBUG - URL Final:", urlFinal);
+        // Se clicar no mesmo que está tocando -> Pausa
+        if (currentAudio.src === urlFinal || decodeURI(currentAudio.src) === urlFinal) {
+            if (!currentAudio.paused) {
+                currentAudio.pause();
+                btn.text('▶');
+                return;
+            }
+        }
 
-        if (currentAudio.src === urlFinal && !currentAudio.paused) {
-            currentAudio.pause();
-            btn.text('▶');
-        } else {
-            $('.player-btn').text('▶');
-            currentAudio.src = urlFinal;
-            currentAudio.load();
-            currentAudio.play().then(() => {
+        // Reseta todos os botões para Play
+        $('.player-btn').text('▶');
+
+        // Configura e toca
+        currentAudio.src = urlFinal;
+        currentAudio.load(); // Força o navegador a reconhecer o novo arquivo
+        
+        const playPromise = currentAudio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
                 btn.text('⏸');
-            }).catch(e => {
-                console.error("Erro ao tocar:", e);
+            }).catch(error => {
+                console.warn("Navegador bloqueou ou arquivo não encontrado:", urlFinal);
             });
         }
     });
 
     currentAudio.onended = () => $('.player-btn').text('▶');
 
+    // 6. Seleção (Carrinho)
     $(document).on('change', '.track-checkbox', function() {
         const info = $(this).data('info');
         const link = $(this).data('link');
@@ -142,8 +159,8 @@ $(document).ready(function () {
         if (selectedItems.length === 0) return;
         let msg = "Olá! Gostaria destas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
-        msg += "\nTotal: " + $('#totalText').text();
-        const numero = "55XXXXXXXXXXX"; 
+        msg += "\nTotal estimado: " + $('#totalText').text();
+        const numero = "55XXXXXXXXXXX"; // Troque pelo seu número
         window.open("https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg), '_blank');
     });
 
@@ -159,7 +176,7 @@ $(document).ready(function () {
 
     function showToast(message) {
         if ($('.btb-toast').length === 0) $('body').append('<div class="btb-toast"></div>');
-        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(7000).fadeOut();
+        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(8000).fadeOut();
     }
 
     setInterval(function() { $.get('/'); }, 600000);
