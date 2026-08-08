@@ -4,17 +4,16 @@ $(document).ready(function () {
     let selectedItems = JSON.parse(localStorage.getItem('btb_carrinho')) || [];
     let currentAudio = new Audio();
     
-    let itemsPerBatch = 100; // Carrega de 100 em 100
+    let itemsPerBatch = 100; 
     let currentIndex = 0;
+
+    // --- CONFIGURAÇÃO DO NOVO SERVIDOR DE MÚSICAS ---
+    const BASE_URL_NETLIFY = "https://demos-backingtrackbrasil.netlify.app";
 
     // 1. Carregar Dados e Organizar
     $.getJSON('tracks.json', function(data) {
-        // Ordena por Título da Música e depois por Artista
         allTracks = data.sort((a, b) => {
-            // Compara o nome da música
             let comp = a.musica.localeCompare(b.musica, 'pt-BR', { sensitivity: 'base' });
-            
-            // Se as músicas tiverem o mesmo nome, organiza pelo nome do artista
             if (comp === 0) {
                 return a.artista.localeCompare(b.artista, 'pt-BR', { sensitivity: 'base' });
             }
@@ -25,7 +24,7 @@ $(document).ready(function () {
         renderNextBatch();
         updateUI();
     }).fail(function() {
-        alert("Erro ao carregar a lista de músicas. Verifique se o arquivo tracks.json está no GitHub.");
+        alert("Erro ao carregar a lista de músicas.");
     });
 
     // 2. Renderização por Demanda (Lazy Load)
@@ -34,7 +33,6 @@ $(document).ready(function () {
         let html = '';
         
         nextBatch.forEach(t => {
-            // Verifica se a música já estava selecionada (persistência)
             const isChecked = selectedItems.find(i => i.link === t.link) ? 'checked' : '';
             const rowClass = isChecked ? 'selected' : '';
             
@@ -60,7 +58,7 @@ $(document).ready(function () {
         $('#loading-msg').hide();
     }
 
-    // 3. Scroll Infinito (Detecta quando o usuário chega no fim da página)
+    // 3. Scroll Infinito
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 300) {
             if (currentIndex < filteredData.length) {
@@ -70,45 +68,45 @@ $(document).ready(function () {
         }
     });
 
-    // 4. Busca Otimizada (Filtra na memória e reseta a tabela)
+    // 4. Busca
     $('#myInput').on('keyup', function() {
         const query = $(this).val().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        
         filteredData = allTracks.filter(t => {
             const m = t.musica.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             const a = t.artista.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             return m.includes(query) || a.includes(query);
         });
-
-        // Limpa a tabela e recomeça do topo com os resultados filtrados
         $('#myTable').empty();
         currentIndex = 0;
         renderNextBatch();
     });
 
-    // 5. Player de Áudio
+    // 5. Player de Áudio (CORRIGIDO PARA NETLIFY)
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
-        const url = btn.data('link');
+        let urlJSON = btn.data('link'); // Pega "/demos/Arquivo.mp3"
 
-        if (currentAudio.src.includes(url) && !currentAudio.paused) {
+        // TRUQUE: Remove "/demos/" e soma com o link do Netlify
+        // O encodeURI resolve problemas com caracteres especiais no nome do arquivo
+        const urlFinal = BASE_URL_NETLIFY + encodeURI(urlJSON.replace('/demos/', '/'));
+
+        if (currentAudio.src === urlFinal && !currentAudio.paused) {
             currentAudio.pause();
             btn.text('▶');
         } else {
             $('.player-btn').text('▶');
-            currentAudio.src = url;
-            currentAudio.play();
+            currentAudio.src = urlFinal;
+            currentAudio.play().catch(e => console.error("Erro ao tocar:", e));
             btn.text('⏸');
         }
     });
 
     currentAudio.onended = () => $('.player-btn').text('▶');
 
-    // 6. Seleção de Músicas (Carrinho)
+    // 6. Seleção (Carrinho)
     $(document).on('change', '.track-checkbox', function() {
         const info = $(this).data('info');
         const link = $(this).data('link');
-
         if ($(this).is(':checked')) {
             if (!selectedItems.find(i => i.link === link)) {
                 selectedItems.push({info: info, link: link});
@@ -118,7 +116,6 @@ $(document).ready(function () {
             selectedItems = selectedItems.filter(i => i.link !== link);
             $(this).closest('tr').removeClass('selected');
         }
-        
         localStorage.setItem('btb_carrinho', JSON.stringify(selectedItems));
         updateUI();
     });
@@ -127,21 +124,13 @@ $(document).ready(function () {
         const count = selectedItems.length;
         $('#selectedCount').text(count);
         $('#totalText').text('R$ ' + (count * 15).toFixed(2));
-        
         let htmlLista = '';
         selectedItems.forEach(item => {
-            htmlLista += `<li class="list-group-item d-flex justify-content-between align-items-center">
-                ${item.info}
-            </li>`;
+            htmlLista += `<li class="list-group-item">${item.info}</li>`;
         });
         $('#listaRevisao').html(htmlLista);
-
-        if (count > 0) {
-            $('#floatingCounterContainer, #finalizarBtn').fadeIn();
-        } else {
-            $('#floatingCounterContainer, #finalizarBtn').fadeOut();
-            $('#myModal').modal('hide');
-        }
+        if (count > 0) $('#floatingCounterContainer, #finalizarBtn').fadeIn();
+        else $('#floatingCounterContainer, #finalizarBtn').fadeOut();
     }
 
     // 7. Envio para o WhatsApp
@@ -149,15 +138,12 @@ $(document).ready(function () {
 
     $('#btnEnviarWhats').click(function() {
         if (selectedItems.length === 0) return;
-
         let msg = "Olá! Gostaria de encomendar estas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
         msg += "\nTotal: " + $('#totalText').text();
         
-        const numero = "55XXXXXXXXXXX"; // <--- COLOQUE SEU WHATSAPP AQUI (DDI+DDD+NUMERO)
-        const url = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg);
-        
-        window.open(url, '_blank');
+        const numero = "55XXXXXXXXXXX"; // <--- SEU WHATSAPP AQUI
+        window.open("https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg), '_blank');
     });
 
     // 8. Limpar Tudo
