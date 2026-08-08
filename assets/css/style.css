@@ -17,14 +17,17 @@
     }
 
     /* Coluna 2 (Artista) - Espaço reduzido */
-    .table th:nth-child(2), 
     .table td:nth-child(2) {
-        width: 33% !important;
-        font-size: 11px !important; /* Fonte menor para caber em menos espaço */
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        word-wrap: break-word; /* Força o nome do artista a quebrar linha */
-    }
+    width: 33% !important;
+    font-size: 11px !important;
+    padding: 8px 5px !important;
+    
+    /* AS 3 LINHAS ABAIXO RESOLVEM O PROBLEMA */
+    white-space: normal !important;   /* Permite que o texto quebre linha */
+    word-wrap: break-word !important; /* Quebra palavras longas se necessário */
+    overflow-wrap: break-word !important; /* Reforço para navegadores modernos */
+    word-break: break-word;           /* Garante a quebra em nomes sem espaços */
+}
 
     /* Coluna 3 (Checkbox) - Apenas o necessário para o clique */
     .table th:nth-child(3), 
