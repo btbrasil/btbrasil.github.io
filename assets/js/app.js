@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     const BASE_URL_NETLIFY = "https://demos-backingtrackbrasil.netlify.app";
 
-    // 1. Carregar Dados e Organizar por Título da Música
+    // 1. Carregar Dados
     $.getJSON('tracks.json', function(data) {
         allTracks = data.sort((a, b) => {
             let comp = a.musica.localeCompare(b.musica, 'pt-BR', { sensitivity: 'base' });
@@ -20,20 +20,33 @@ $(document).ready(function () {
         filteredData = allTracks;
         renderNextBatch();
         updateUI();
+
+        // --- NOVO: LÓGICA DE BUSCA VIA URL (PARA SEO) ---
+        const urlParams = new URLSearchParams(window.location.search);
+        const buscaUrl = urlParams.get('busca');
+        if (buscaUrl) {
+            $('#myInput').val(buscaUrl).trigger('keyup');
+            // Rola a página até a tabela para o usuário ver o resultado
+            $('html, body').animate({ scrollTop: $('#tabela-container').offset().top - 50 }, 'slow');
+        }
     });
 
-    // 2. Renderização por Demanda (Lazy Load)
+    // 2. Renderização (Lazy Load)
     function renderNextBatch() {
         const nextBatch = filteredData.slice(currentIndex, currentIndex + itemsPerBatch);
         let html = '';
         nextBatch.forEach(t => {
+            // Lógica do Vocal
+            let etiquetaVocal = t.tem_vocal == 1 ? '<br><span class="vocal-label"><span class="glyphicon glyphicon-ok"></span> Vocal Opcional</span>' : '';
+            
             const isChecked = selectedItems.find(i => i.link === t.link) ? 'checked' : '';
             const rowClass = isChecked ? 'selected' : '';
+            
             html += `<tr class="${rowClass}">
                 <td>
                     <div class="song-cell-inner">
                         <button class="player-btn" data-link="${t.link}">▶</button>
-                        <span class="song-title">${t.musica}</span>
+                        <span class="song-title">${t.musica}${etiquetaVocal}</span> <!-- CORRIGIDO: Adicionado etiquetaVocal aqui -->
                     </div>
                 </td>
                 <td>${t.artista}</td>
@@ -66,7 +79,7 @@ $(document).ready(function () {
         renderNextBatch();
     });
 
-    // 5. Player de Áudio (Versão Simples e Direta)
+    // 5. Player
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
         const urlJSON = btn.data('link'); 
@@ -80,18 +93,14 @@ $(document).ready(function () {
 
         $('.player-btn').text('▶');
         currentAudio.src = urlFinal;
-        
         currentAudio.play().then(() => {
             btn.text('⏸');
-        }).catch(error => {
-            console.error("Erro ao tocar:", urlFinal);
-            
-        });
+        }).catch(error => console.error("Erro ao tocar:", urlFinal));
     });
 
     currentAudio.onended = () => $('.player-btn').text('▶');
 
-    // 6. Seleção (Carrinho) e 7. WhatsApp (Mantenha igual ao anterior)
+    // 6. Seleção (Carrinho)
     $(document).on('change', '.track-checkbox', function() {
         const info = $(this).data('info');
         const link = $(this).data('link');
@@ -99,7 +108,7 @@ $(document).ready(function () {
             if (!selectedItems.find(i => i.link === link)) selectedItems.push({info: info, link: link});
             $(this).closest('tr').addClass('selected');
             if (!avisoNavegacaoExibido && selectedItems.length === 1) {
-                showToast("Seleção salva! Você pode navegar à vontade."); 
+                showToast("Seleção salva! Você pode navegar à vontade antes de finalizar."); 
                 avisoNavegacaoExibido = true;
             }
         } else {
@@ -115,7 +124,9 @@ $(document).ready(function () {
         $('#selectedCount').text(count);
         $('#totalText').text('R$ ' + (count * 15).toFixed(2));
         let htmlLista = '';
-        selectedItems.forEach(item => { htmlLista += `<li class="list-group-item">${item.info}</li>`; });
+        selectedItems.forEach(item => {
+            htmlLista += `<li class="list-group-item">${item.info}</li>`;
+        });
         $('#listaRevisao').html(htmlLista);
         if (count > 0) $('#floatingCounterContainer, #finalizarBtn').fadeIn();
         else $('#floatingCounterContainer, #finalizarBtn').fadeOut();
@@ -124,10 +135,11 @@ $(document).ready(function () {
     $('#finalizarBtn').click(() => $('#myModal').modal('show'));
 
     $('#btnEnviarWhats').click(function() {
-        let msg = "Olá! Gostaria destas backing tracks:\n\n";
+        if (selectedItems.length === 0) return;
+        let msg = "Olá! Tenho interesse nessas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
-        msg += "\nTotal estimado: " + $('#totalText').text();
-        const numero = "553591287114"; // COLOQUE SEU NÚMERO
+        msg += "\nValor: " + $('#totalText').text();
+        const numero = "553591287114"; 
         window.open("https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg), '_blank');
     });
 
@@ -140,12 +152,6 @@ $(document).ready(function () {
 
     function showToast(message) {
         if ($('.btb-toast').length === 0) $('body').append('<div class="btb-toast"></div>');
-        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(7000).fadeOut();
+        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(8000).fadeOut();
     }
 });
-
-const urlParams = new URLSearchParams(window.location.search);
-const buscaUrl = urlParams.get('busca');
-if (buscaUrl) {
-    $('#myInput').val(buscaUrl).trigger('keyup');
-}
