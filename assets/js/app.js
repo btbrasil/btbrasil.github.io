@@ -8,7 +8,6 @@ $(document).ready(function () {
     let currentIndex = 0;
     let avisoNavegacaoExibido = false;
 
-    // --- CONFIGURAÇÃO DO SERVIDOR DE MÚSICAS ---
     const BASE_URL_NETLIFY = "https://demos-backingtrackbrasil.netlify.app";
 
     // 1. Carregar Dados e Organizar por Título da Música
@@ -21,8 +20,6 @@ $(document).ready(function () {
         filteredData = allTracks;
         renderNextBatch();
         updateUI();
-    }).fail(function() {
-        console.error("Erro ao carregar tracks.json");
     });
 
     // 2. Renderização por Demanda (Lazy Load)
@@ -32,8 +29,7 @@ $(document).ready(function () {
         nextBatch.forEach(t => {
             const isChecked = selectedItems.find(i => i.link === t.link) ? 'checked' : '';
             const rowClass = isChecked ? 'selected' : '';
-            html += `
-            <tr class="${rowClass}">
+            html += `<tr class="${rowClass}">
                 <td>
                     <div class="song-cell-inner">
                         <button class="player-btn" data-link="${t.link}">▶</button>
@@ -48,16 +44,12 @@ $(document).ready(function () {
         });
         $('#myTable').append(html);
         currentIndex += itemsPerBatch;
-        $('#loading-msg').hide();
     }
 
     // 3. Scroll Infinito
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 400) {
-            if (currentIndex < filteredData.length) {
-                $('#loading-msg').show();
-                renderNextBatch();
-            }
+            if (currentIndex < filteredData.length) renderNextBatch();
         }
     });
 
@@ -69,29 +61,26 @@ $(document).ready(function () {
             const a = t.artista.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             return m.includes(query) || a.includes(query);
         });
-        $('#myTable').empty();
-        currentIndex = 0;
+        $('#myTable').empty(); 
+        currentIndex = 0; 
         renderNextBatch();
     });
 
-    // 5. Player de Áudio (CORRIGIDO E SEGURO)
+    // 5. Player de Áudio (Suporte a Netlify e Dropbox)
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
         const urlOriginal = btn.data('link'); 
         let urlFinal = "";
 
-        // LÓGICA DE SEPARAÇÃO: Dropbox vs Netlify
         if (urlOriginal.includes('http')) {
-            // Se tem HTTP, é link direto (Dropbox). Usamos como está.
             urlFinal = urlOriginal;
         } else {
-            // Se não tem, limpamos o "/demos/" e montamos para o Netlify
-            const arquivoLimpo = urlOriginal.replace('/demos/', '');
-            // encodeURI lida com espaços e acentos no nome do arquivo MP3
-            urlFinal = BASE_URL_NETLIFY + '/' + encodeURI(arquivoLimpo);
+            // Remove /demos/ e garante que o nome do arquivo esteja limpo
+            const arquivoLimpo = urlOriginal.replace('/demos/', '').trim();
+            urlFinal = BASE_URL_NETLIFY + '/' + arquivoLimpo;
         }
 
-        // Se clicar no mesmo que está tocando -> Pausa
+        // Se já está tocando esta música -> Pausa
         if (currentAudio.src === urlFinal || decodeURI(currentAudio.src) === urlFinal) {
             if (!currentAudio.paused) {
                 currentAudio.pause();
@@ -100,36 +89,38 @@ $(document).ready(function () {
             }
         }
 
-        // Reseta todos os botões para Play
         $('.player-btn').text('▶');
 
-        // Configura e toca
+        // Configura a nova fonte e tenta tocar
         currentAudio.src = urlFinal;
-        currentAudio.load(); // Força o navegador a reconhecer o novo arquivo
+        currentAudio.load();
         
-        const playPromise = currentAudio.play();
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
-                btn.text('⏸');
-            }).catch(error => {
-                console.warn("Navegador bloqueou ou arquivo não encontrado:", urlFinal);
-            });
-        }
+        currentAudio.play().then(() => {
+            btn.text('⏸');
+        }).catch(error => {
+            console.error("Erro ao tocar áudio:", urlFinal, error);
+            // Tenta uma versão codificada caso o nome tenha caracteres especiais
+            if (!urlOriginal.includes('http')) {
+                const urlEscapada = BASE_URL_NETLIFY + '/' + encodeURIComponent(urlOriginal.replace('/demos/', '')).replace(/%2F/g, '/');
+                currentAudio.src = urlEscapada;
+                currentAudio.play().then(() => btn.text('⏸')).catch(() => {
+                    alert("Não foi possível carregar a demo. Verifique se o arquivo existe no Netlify.");
+                });
+            }
+        });
     });
 
     currentAudio.onended = () => $('.player-btn').text('▶');
 
-    // 6. Seleção (Carrinho)
+    // 6. Seleção (Carrinho) e 7. WhatsApp (Mantenha igual ao anterior)
     $(document).on('change', '.track-checkbox', function() {
         const info = $(this).data('info');
         const link = $(this).data('link');
         if ($(this).is(':checked')) {
-            if (!selectedItems.find(i => i.link === link)) {
-                selectedItems.push({info: info, link: link});
-            }
+            if (!selectedItems.find(i => i.link === link)) selectedItems.push({info: info, link: link});
             $(this).closest('tr').addClass('selected');
             if (!avisoNavegacaoExibido && selectedItems.length === 1) {
-                showToast("Seleção salva! Você pode navegar à vontade antes de finalizar.");
+                showToast("Seleção salva! Você pode navegar à vontade."); 
                 avisoNavegacaoExibido = true;
             }
         } else {
@@ -145,9 +136,7 @@ $(document).ready(function () {
         $('#selectedCount').text(count);
         $('#totalText').text('R$ ' + (count * 15).toFixed(2));
         let htmlLista = '';
-        selectedItems.forEach(item => {
-            htmlLista += `<li class="list-group-item">${item.info}</li>`;
-        });
+        selectedItems.forEach(item => { htmlLista += `<li class="list-group-item">${item.info}</li>`; });
         $('#listaRevisao').html(htmlLista);
         if (count > 0) $('#floatingCounterContainer, #finalizarBtn').fadeIn();
         else $('#floatingCounterContainer, #finalizarBtn').fadeOut();
@@ -156,28 +145,22 @@ $(document).ready(function () {
     $('#finalizarBtn').click(() => $('#myModal').modal('show'));
 
     $('#btnEnviarWhats').click(function() {
-        if (selectedItems.length === 0) return;
         let msg = "Olá! Gostaria destas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
         msg += "\nTotal estimado: " + $('#totalText').text();
-        const numero = "55XXXXXXXXXXX"; // Troque pelo seu número
+        const numero = "55XXXXXXXXXXX"; // COLOQUE SEU NÚMERO
         window.open("https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg), '_blank');
     });
 
     $('#limparCarrinho').click(function() {
-        if(confirm("Remover todas as seleções?")) {
-            selectedItems = [];
-            localStorage.removeItem('btb_carrinho');
-            $('.track-checkbox').prop('checked', false);
-            $('.selected').removeClass('selected');
-            updateUI();
+        if(confirm("Limpar tudo?")) {
+            selectedItems = []; localStorage.removeItem('btb_carrinho');
+            $('.track-checkbox').prop('checked', false); $('.selected').removeClass('selected'); updateUI();
         }
     });
 
     function showToast(message) {
         if ($('.btb-toast').length === 0) $('body').append('<div class="btb-toast"></div>');
-        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(8000).fadeOut();
+        $('.btb-toast').text(message).stop(true, true).fadeIn().delay(7000).fadeOut();
     }
-
-    setInterval(function() { $.get('/'); }, 600000);
 });
