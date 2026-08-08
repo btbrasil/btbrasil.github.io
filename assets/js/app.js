@@ -143,3 +143,9 @@ $(document).ready(function () {
         $('.btb-toast').text(message).stop(true, true).fadeIn().delay(7000).fadeOut();
     }
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+const buscaUrl = urlParams.get('busca');
+if (buscaUrl) {
+    $('#myInput').val(buscaUrl).trigger('keyup');
+}
