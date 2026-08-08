@@ -66,47 +66,26 @@ $(document).ready(function () {
         renderNextBatch();
     });
 
-    // 5. Player de Áudio (Suporte a Netlify e Dropbox)
+    // 5. Player de Áudio (Versão Simples e Direta)
     $(document).on('click', '.player-btn', function() {
         const btn = $(this);
-        const urlOriginal = btn.data('link'); 
-        let urlFinal = "";
+        const urlJSON = btn.data('link'); 
+        let urlFinal = urlJSON.includes('http') ? urlJSON : BASE_URL_NETLIFY + '/' + urlJSON.replace('/demos/', '');
 
-        if (urlOriginal.includes('http')) {
-            urlFinal = urlOriginal;
-        } else {
-            // Remove /demos/ e garante que o nome do arquivo esteja limpo
-            const arquivoLimpo = urlOriginal.replace('/demos/', '').trim();
-            urlFinal = BASE_URL_NETLIFY + '/' + arquivoLimpo;
-        }
-
-        // Se já está tocando esta música -> Pausa
-        if (currentAudio.src === urlFinal || decodeURI(currentAudio.src) === urlFinal) {
-            if (!currentAudio.paused) {
-                currentAudio.pause();
-                btn.text('▶');
-                return;
-            }
+        if (currentAudio.src === urlFinal && !currentAudio.paused) {
+            currentAudio.pause();
+            btn.text('▶');
+            return;
         }
 
         $('.player-btn').text('▶');
-
-        // Configura a nova fonte e tenta tocar
         currentAudio.src = urlFinal;
-        currentAudio.load();
         
         currentAudio.play().then(() => {
             btn.text('⏸');
         }).catch(error => {
-            console.error("Erro ao tocar áudio:", urlFinal, error);
-            // Tenta uma versão codificada caso o nome tenha caracteres especiais
-            if (!urlOriginal.includes('http')) {
-                const urlEscapada = BASE_URL_NETLIFY + '/' + encodeURIComponent(urlOriginal.replace('/demos/', '')).replace(/%2F/g, '/');
-                currentAudio.src = urlEscapada;
-                currentAudio.play().then(() => btn.text('⏸')).catch(() => {
-                    alert("Não foi possível carregar a demo. Verifique se o arquivo existe no Netlify.");
-                });
-            }
+            console.error("Erro ao tocar:", urlFinal);
+            
         });
     });
 
@@ -148,7 +127,7 @@ $(document).ready(function () {
         let msg = "Olá! Gostaria destas backing tracks:\n\n";
         selectedItems.forEach(i => msg += "- " + i.info + "\n");
         msg += "\nTotal estimado: " + $('#totalText').text();
-        const numero = "55XXXXXXXXXXX"; // COLOQUE SEU NÚMERO
+        const numero = "553591287114"; // COLOQUE SEU NÚMERO
         window.open("https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(msg), '_blank');
     });
 
