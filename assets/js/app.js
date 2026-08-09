@@ -37,7 +37,7 @@ $(document).ready(function () {
         let html = '';
         nextBatch.forEach(t => {
             // Lógica do Vocal
-            let etiquetaVocal = t.tem_vocal == 1 ? '<br><span class="vocal-label"><span class="glyphicon glyphicon-ok"></span> Vocal Opcional</span>' : '';
+            let etiquetaVocal = t.tem_vocal == 1 ? '<br><span class="vocal-label"><span class="glyphicon glyphicon-microphone"></span> Vocal Opcional</span>' : '';
             
             const isChecked = selectedItems.find(i => i.link === t.link) ? 'checked' : '';
             const rowClass = isChecked ? 'selected' : '';
