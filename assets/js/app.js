@@ -119,7 +119,7 @@ $(document).ready(function () {
         updateUI();
     });
 
-    // 6.5 Clique na célula
+    // 6.5 Clique na célula 
     $(document).on('click', '.checkbox-cell', function(e) {
         if (!$(e.target).is('input')) {
             const cb = $(this).find('.track-checkbox');
