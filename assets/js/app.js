@@ -119,6 +119,14 @@ $(document).ready(function () {
         updateUI();
     });
 
+    // 6.5 Clique na célula
+    $(document).on('click', '.checkbox-cell', function(e) {
+        if (!$(e.target).is('input')) {
+            const cb = $(this).find('.track-checkbox');
+            cb.prop('checked', !cb.prop('checked')).trigger('change');
+        }
+    });
+
     function updateUI() {
         const count = selectedItems.length;
         $('#selectedCount').text(count);
