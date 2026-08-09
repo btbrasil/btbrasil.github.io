@@ -2,28 +2,25 @@
 
 .vocal-label {
     display: inline-block;
-    font-size: 8px;
+    font-size: 9px;         /* Fonte menor */
     color: #27ae60;
     background: #e8f5e9;
-    padding: 3px 8px; /* Aumentei um pouco o preenchimento */
-    border-radius: 4px;
-    margin-top: 4px;
+    padding: 1px 6px;       /* Padding bem reduzido */
+    border-radius: 3px;
+    margin-top: 2px;
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid #c8e6c9;
-    line-height: 1;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
 }
 
-.vocal-label .glyphicon {
-    margin-right: 4px; /* Espaço entre o microfone e o texto */
-    top: 2px; /* Ajuste fino para o microfone não ficar muito alto */
-}
-
-/* No mobile, garantimos que ele não force a barra */
+/* Ajuste específico para telas de celular */
 @media (max-width: 768px) {
     .vocal-label {
-        font-size: 9px;
-        padding: 1px 4px;
+        font-size: 8px;     /* Ainda menor no celular */
+        padding: 0px 4px;
+        letter-spacing: 0;
     }
 }
 
